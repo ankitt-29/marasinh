@@ -396,14 +396,16 @@ const Contact = () => {
           </div>
 
           <div className="rectangle-parent7">
-            <div className="frame-child8" />
-            <button className="button-group">
-              <div className="text-container">
-                <div className="submit-application">SUBMIT APPLICATION</div>
-              </div>
-            </button>
+            {/* <button className="button-group">
+              <span className="button-text">Submit Application</span>
+            </button> */}
+            <div className="button-container1 ">
+            <a href="#" className="magic-button1"><span style={{color: '#525252'}}>SUBMIT APPLICATION</span></a>
+            </div>
           </div>
+
         </div>
+
         <div className="instagram-icon-frame">
           <div className="dribbble-icon-frame" />
           <div className="behance-icon-frame">

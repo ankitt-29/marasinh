@@ -56,9 +56,73 @@ body {
   transform: scale(1.1, 1.5);
 }
 
+/* ------------------------ */
+
+.button-container1 {
+  position: relative;
+  width: 526px;
+  height: 126px;
+  flex-shrink: 0;
+  border-radius: 88px;
+  background-color: var(--color-gray-1300);
+  border: 2px solid var(--color-gray-1200);
+  border: 2px solid rgba(90, 97, 255, 0.26);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.magic-button1 {
+  display: inline-flex;
+  padding: 28px 100px;
+  align-items: center;
+  gap: 30px;
+  border-radius: 100px;
+  color: #FFF;
+  font-family: "Plus Jakarta Sans";
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-decoration: none;
+  position: relative;
+  z-index: 1;
+}
+.submit-text
+{
+  color: #525252;
+  font-family: "Plus Jakarta Sans";
+}
+.magic-button1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  border-radius: inherit;
+  z-index: -1;
+  transform-origin: center center;
+  transform: scale(1, 1);
+  transition: transform 1s ease;
+}
+.magic-button1:hover{
+  transform: scale(1.1, 1.5);
+  transition: transform 2s ease;
+
+}
+.button-container1:hover .magic-button1::before {
+  transform: scale(1.1, 1.5);
+}
+
+/* ---------------------------- */
 .checkbox-text {
   color: #FFF;
-  font-family: Figtree;
+  font-family: "Figtree";
   font-size: 26px;
   font-style: normal;
   font-weight: 700;
@@ -474,7 +538,7 @@ body {
 }
 
 .your-name {
-  width: 171px;
+  width: 100%;
   border: 0;
   outline: 0;
   font-weight: 600;
@@ -574,7 +638,7 @@ body {
 }
 
 .your-phone-number {
-  width: 287px;
+  width: 100%;
   border: 0;
   outline: 0;
   font-weight: 600;
@@ -618,7 +682,7 @@ body {
 }
 
 .your-organisation-name {
-  width: 344px;
+  width: 100%;
   border: 0;
   outline: 0;
   font-weight: 600;
@@ -1199,12 +1263,15 @@ body {
   text-align: left;
   display: inline-block;
 }
-
+.button-text {
+  display: inline-block;
+  transform: scale(1 / 1.1); /* Inverse scaling to counteract the parent's scaling */
+}
 .button-group {
   cursor: pointer;
   border: 0;
   padding: var(--padding-7xl);
-  background-color: var(--color-white);
+  background-color: #fff;
   width: 400px;
   border-radius: var(--br-81xl);
   flex-direction: row;
@@ -1213,11 +1280,17 @@ body {
   z-index: 1;
   overflow: hidden;
   position: relative;
+  transition: transform 0.3s ease; /* Added transition for smooth effect */
+  transform-origin: center; /* Set transform origin to the center */
 }
-.button-group:hover
-{
-  width: 435px;
-  height: 114px;
+.button-group:hover {
+  transform: scale(1.1) !important; /* Adjust the scaling factor as needed */
+}
+.button-group:hover .button-text {
+  transform: scale(1 / 1.1); /* Inverse scaling to counteract the parent's scaling */
+}
+.rectangle-parent7:hover .button-group {
+  transform: scale(1.1);
 }
 .button-group:hover,
 .lets-get-in-touch-parent:hover {
@@ -1238,16 +1311,15 @@ body {
 }
 
 .rectangle-parent7 {
-  width: 435px;
+  width: 525px;
   border-radius: var(--br-69xl);
-  background-color: var(--color-gray-1300);
-  border: 2px solid var(--color-gray-1200);
-  flex-direction: row;
+  background-color: rgba(0, 0, 0, 0);
+  border: 2px solid rgba(0, 0, 0, 0);;
+  /* flex-direction: row; */
   justify-content: center;
   padding: var(--padding-smi) var(--padding-smi) var(--padding-sm);
   z-index: 2;
-  overflow: hidden;
-  position: relative;
+ 
 }
 
 .linked-in-icon {
