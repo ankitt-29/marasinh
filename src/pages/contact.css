@@ -1,7 +1,95 @@
 body {
   zoom: 67% !important;
+
+ 
 }
 
+/* ---------------   rectangle          --------------------- */
+
+
+.custom-input {
+  width: 685px;
+  height: 108px;
+    border: 1px solid rgba(124, 100, 147, 1);
+  border-radius: 38px;
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0.05);
+  margin: 10px; /* Adjust margin as needed */
+}
+
+
+
+.e145_4457 { 
+	background-color:rgba(17.395519763231277, 17.395519763231277, 17.395519763231277, 0.4000000059604645);
+	width:1620px;
+	height:1477px;
+	border-top-left-radius:45px;
+	border-top-right-radius:45px;
+	border-bottom-left-radius:45px;
+	border-bottom-right-radius:45px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.pink-shadow {
+  position: absolute;
+  width: 280px;
+  margin-top: 25px;
+  height: 280px;
+  left: 1506px;
+  top: 3893px;
+  opacity: 0.7;
+  background: rgba(180, 148, 206, 0.7);
+  filter: blur(200px);
+
+}
+
+.custom-rectangle {
+  width: auto;
+  height: auto;
+  flex-shrink: 0;
+  border-radius: 70px 70px 0px 0px;
+  border: 1px solid #121212;
+  background: linear-gradient(175deg, rgba(75, 75, 75, 0.37) -6.37%, rgba(0, 0, 0, 0.00) 55.47%);
+}
+
+.custom-text {
+  color: #FFF;
+  font-family: Figtree;
+  font-size: 120px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 145.5px;
+}
+
+.follow-us {
+  margin-top: 20px;
+  margin-left: 20px;
+  color: #9A9A9A;
+  font-family: Figtree;
+  font-size: 33px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+/* ------------------------------------------------------------------- */
 .button-container {
   position: relative;
   width: 526px;
@@ -62,11 +150,12 @@ body {
   position: relative;
   width: 526px;
   height: 126px;
+  text-align: center;
   flex-shrink: 0;
   border-radius: 88px;
   background-color: var(--color-gray-1300);
   border: 2px solid var(--color-gray-1200);
-  border: 2px solid rgba(90, 97, 255, 0.26);
+  border: 2px solid #5a61ff42;
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -91,18 +180,20 @@ body {
   position: relative;
   z-index: 1;
 }
-.submit-text
-{
+
+.submit-text {
   color: #525252;
   font-family: "Plus Jakarta Sans";
 }
+
 .magic-button1::before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 114%;
+  margin-top: -6px;
   background: #fff;
   border-radius: inherit;
   z-index: -1;
@@ -110,16 +201,92 @@ body {
   transform: scale(1, 1);
   transition: transform 1s ease;
 }
-.magic-button1:hover{
+
+/* .magic-button1:hover{
   transform: scale(1.1, 1.5);
   transition: transform 2s ease;
 
-}
+} */
 .button-container1:hover .magic-button1::before {
   transform: scale(1.1, 1.5);
 }
 
+
 /* ---------------------------- */
+
+
+.button-container2 {
+  position: relative;
+  width: 518px;
+  height: 128px;
+  flex-shrink: 0;
+  border-radius: 88px;
+  background-color: var(--color-gray-1300);
+  border: 2px solid var(--color-gray-1200);
+  border: 2px solid rgba(90, 97, 255, 0.26);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.magic-button2 {
+  display: inline-flex;
+  padding: 28px 100px;
+  align-items: center;
+  gap: 30px;
+  border-radius: 100px;
+  color: #FFF;
+  font-family: "Plus Jakarta Sans";
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-decoration: none;
+  position: relative;
+  z-index: 1;
+}
+
+.submit-text {
+  color: #525252;
+  font-family: "Plus Jakarta Sans";
+}
+
+.magic-button2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 86%;
+  margin-top: 9px;
+  background: #fff;
+  border-radius: inherit;
+  z-index: -1;
+  transform-origin: center center;
+  transform: scale(1, 1);
+  transition: transform 1s ease;
+}
+
+.star-img {
+  margin-left: -22px;
+  width: 46px;
+}
+
+/* .magic-button1:hover{
+  transform: scale(1.1, 1.5);
+  transition: transform 2s ease;
+
+} */
+.button-container2:hover .magic-button2::before {
+  transform: scale(1.1, 1.5);
+}
+
+/* ------------------------------------ */
+
+
 .checkbox-text {
   color: #FFF;
   font-family: "Figtree";
@@ -465,6 +632,16 @@ body {
   margin: 0 !important;
 }
 
+.twitter-icon1 {
+  position: absolute;
+  margin: 0 !important;
+}
+
+.twitter-icon2 {
+  position: absolute;
+  margin: 0 !important;
+}
+
 .instagram-icon {
   width: 100%;
   height: 100%;
@@ -480,13 +657,69 @@ body {
   z-index: 1;
 }
 
+.write-about-your {
+  width: 1440px;
+  height: 264px;
+  flex-shrink: 0;
+  border-radius: 38px;
+  border: 1px solid #7C6493;
+  background: rgba(255, 255, 255, 0.05);
+  color: #6B6B6B;
+  font-family: 'Figtree';
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 48px;
+  padding: 20px;
+}
+
+.write-about-your::placeholder {
+  position: absolute;
+  top: 48px;
+  color: #999;
+}
+
+.your-name:not(:placeholder-shown),
+.your-email:not(:placeholder-shown),
+.your-phone-number:not(:placeholder-shown),
+.your-organisation-name:not(:placeholder-shown),
+.write-about-your:not(:placeholder-shown) {
+  color: #fff;
+}
+
+
 .twitter-icon {
   height: 261px;
   width: 261px;
-  bottom: -108px;
-  left: -90px;
+  bottom: -143px;
+  left: -55px;
+
   border-radius: 50%;
   background-color: var(--color-plum-100);
+}
+
+.twitter-icon1 {
+  height: 261px;
+  width: 261px;
+  bottom: -78px;
+  top: -51px;
+
+  left: -41px;
+  border-radius: 50%;
+  background-color: var(--color-plum-100);
+}
+
+.twitter-icon2 {
+  height: 261px;
+  width: 261px;
+  bottom: -78px;
+  left: -41px;
+  border-radius: 50%;
+  background-color: var(--color-plum-100);
+}
+
+.write-about-your::placeholder {
+  display: none;
 }
 
 .lets-create-special {
@@ -498,6 +731,46 @@ body {
   font-family: inherit;
   z-index: 2;
 }
+
+.social-icons1:hover {
+  filter: brightness(0.8) sepia(1) hue-rotate(200deg) saturate(1000%) brightness(1.5);
+}
+
+
+
+
+/* ---------------------------------- */
+.linkedin-logo {
+  position: relative;
+  width: 40px;
+  height: 40px;
+}
+
+.linkedin-logo svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.3s ease;
+}
+
+.linkedin-logo .hover-logo {
+  opacity: 0;
+}
+
+.linkedin-logo:hover .normal-logo {
+  opacity: 0;
+}
+
+.linkedin-logo:hover .hover-logo {
+  opacity: 1;
+}
+
+/* ------------------------------------ */
+
+
+
 
 .behance-icon {
   display: flex;
@@ -538,6 +811,7 @@ body {
 }
 
 .your-name {
+  display: none;
   width: 100%;
   border: 0;
   outline: 0;
@@ -575,7 +849,7 @@ body {
 }
 
 .rectangle-div {
-  height: 108px;
+  height: 80px;
   width: 685px;
   position: relative;
   display: none;
@@ -639,8 +913,8 @@ body {
 
 .your-phone-number {
   width: 100%;
-  border: 0;
-  outline: 0;
+  border: none;
+  outline: none;
   font-weight: 600;
   font-family: var(--font-figtree);
   font-size: var(--font-size-13xl);
@@ -653,7 +927,6 @@ body {
   display: inline-block;
   z-index: 1;
 }
-
 .frame-child2,
 .rectangle-parent1 {
   border-radius: var(--br-19xl);
@@ -673,7 +946,10 @@ body {
   min-width: 445px;
   z-index: 2;
 }
-
+.your-phone-number:focus {
+  background-color: transparent; /* Set background color to transparent on focus */
+  outline: none;
+}
 .frame-child2 {
   height: 108px;
   width: 685px;
@@ -1215,6 +1491,13 @@ body {
   z-index: 3;
 }
 
+.write-about-your1 {
+  position: relative;
+  line-height: 48px;
+  font-weight: 600;
+  z-index: 3;
+}
+
 .b-e-s-i-m-p-l-e-b-e-c-r-e-a-t1,
 .project-info {
   align-self: stretch;
@@ -1263,10 +1546,13 @@ body {
   text-align: left;
   display: inline-block;
 }
+
 .button-text {
   display: inline-block;
-  transform: scale(1 / 1.1); /* Inverse scaling to counteract the parent's scaling */
+  transform: scale(1 / 1.1);
+  /* Inverse scaling to counteract the parent's scaling */
 }
+
 .button-group {
   cursor: pointer;
   border: 0;
@@ -1280,18 +1566,26 @@ body {
   z-index: 1;
   overflow: hidden;
   position: relative;
-  transition: transform 0.3s ease; /* Added transition for smooth effect */
-  transform-origin: center; /* Set transform origin to the center */
+  transition: transform 0.3s ease;
+  /* Added transition for smooth effect */
+  transform-origin: center;
+  /* Set transform origin to the center */
 }
+
 .button-group:hover {
-  transform: scale(1.1) !important; /* Adjust the scaling factor as needed */
+  transform: scale(1.1) !important;
+  /* Adjust the scaling factor as needed */
 }
+
 .button-group:hover .button-text {
-  transform: scale(1 / 1.1); /* Inverse scaling to counteract the parent's scaling */
+  transform: scale(1 / 1.1);
+  /* Inverse scaling to counteract the parent's scaling */
 }
+
 .rectangle-parent7:hover .button-group {
   transform: scale(1.1);
 }
+
 .button-group:hover,
 .lets-get-in-touch-parent:hover {
   background-color: var(--color-gainsboro-200);
@@ -1301,6 +1595,7 @@ body {
   overflow: hidden;
   position: relative;
 }
+
 .button-group,
 .linked-in-icon,
 .rectangle-parent7 {
@@ -1314,12 +1609,13 @@ body {
   width: 525px;
   border-radius: var(--br-69xl);
   background-color: rgba(0, 0, 0, 0);
-  border: 2px solid rgba(0, 0, 0, 0);;
+  border: 2px solid rgba(0, 0, 0, 0);
+  ;
   /* flex-direction: row; */
   justify-content: center;
   padding: var(--padding-smi) var(--padding-smi) var(--padding-sm);
   z-index: 2;
- 
+
 }
 
 .linked-in-icon {
@@ -1329,6 +1625,7 @@ body {
   padding: var(--padding-71xl) var(--padding-49xl) var(--padding-49xl);
   position: relative;
   gap: var(--gap-36xl);
+  margin-top:-87px;
 }
 
 .dribbble-icon-frame {
@@ -1346,6 +1643,16 @@ body {
   border: 1px solid var(--color-mediumpurple);
   box-sizing: border-box;
   z-index: 1;
+}
+
+.work,
+.about,
+.contact-us {
+  color: #939393;
+  text-decoration: none;
+  position: relative;
+  z-index: 1;
+  /* Add any other styles to match your design */
 }
 
 .linked-in-icon-frame {
@@ -1416,6 +1723,7 @@ body {
   line-height: 48px;
   font-weight: 600;
   z-index: 2;
+  color: #B1B4FF;
 }
 
 .text-frame1 {
@@ -1434,6 +1742,7 @@ body {
   line-height: 48px;
   font-weight: 600;
   z-index: 2;
+  color: #B1B4FF;
 }
 
 .rectangle-shape {
@@ -1442,6 +1751,8 @@ body {
   position: absolute;
   margin: 0 !important;
   top: -105px;
+  left: -41px;
+
   right: -90.5px;
   border-radius: 50%;
   background-color: var(--color-plum-100);
@@ -1453,6 +1764,7 @@ body {
   line-height: 48px;
   font-weight: 600;
   z-index: 2;
+  color: #B1B4FF;
 }
 
 .ellipse-shape-with-fill,
@@ -1514,6 +1826,7 @@ body {
   font-size: var(--font-size-13xl);
   color: var(--color-darkgray-100);
   font-family: var(--font-figtree);
+ 
 }
 
 .background-rectangle,
@@ -1621,7 +1934,9 @@ body {
 .lets-get-in-touch-parent {
   cursor: pointer;
   border: 0;
-  padding: var(--padding-7xl) var(--padding-33xl);
+  width: 200px;
+  /* Adjust the width as needed */
+  padding: var(--padding-7xl);
   background-color: var(--color-white);
   flex: 1;
   border-radius: var(--br-81xl);
@@ -1630,6 +1945,7 @@ body {
   white-space: nowrap;
   z-index: 1;
 }
+
 
 .rectangle-parent8 {
   align-self: stretch;
@@ -2183,6 +2499,15 @@ body {
   .twitter {
     font-size: var(--font-size-7xl);
     line-height: 38px;
+  }
+
+  .link {
+    display: inline-block;
+    padding: 10px;
+    /* Adjust as needed */
+    text-decoration: none;
+    color: #939393 !important;
+    /* Add any other styles to match your design */
   }
 
   .instagram-icon-frame {

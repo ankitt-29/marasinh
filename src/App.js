@@ -6,7 +6,7 @@ import {
   useLocation,
 } from "react-router-dom";
 import ContainerGroup from "./pages/contact";
-import HeaderFrame from "./pages/HeaderFrame";
+import HeaderFrame from "./pages/Home";
 import FrameHeader from "./pages/FrameHeader";
 import Contact from "./pages/contact";
 
@@ -20,7 +20,7 @@ function App() {
   return (
     <Routes>
       <Route path="/contact" element={<Contact />} />
-      <Route path="/header-frame" element={<HeaderFrame />} />
+      <Route path="/home" element={<HeaderFrame />} />
       <Route path="/frame-header" element={<FrameHeader />} />
 
     </Routes>

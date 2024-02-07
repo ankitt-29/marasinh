@@ -1,3 +1,81 @@
+
+
+.design-beyond-boundarie {
+  background: linear-gradient(90.13deg, #7AFF64, #7AFF64 54.5%, #b78700);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;;
+}
+
+.design-service1 {
+  background: linear-gradient(90.13deg, #FFE279, #FFE279 54.5%, #b78700);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+
+.button-container3 {
+  position: relative;
+  width: 428px;
+  height: 126px;
+  flex-shrink: 0;
+  border-radius: 88px;
+  border: 2px solid rgba(90, 97, 255, 0.26);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-mediumslateblue-600);
+
+}
+
+.top-hat {
+  margin-left: -22px;
+  width: 43px;
+}
+
+.magic-button3 {
+  display: inline-flex;
+  padding: 28px 100px;
+  align-items: center;
+  gap: 30px;
+  border-radius: 100px;
+  color: #FFF;
+  font-family: "Plus Jakarta Sans";
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-decoration: none;
+  position: relative;
+  z-index: 1;
+}
+
+.magic-button3::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #5A61FF;
+  border-radius: inherit;
+  z-index: -1;
+  transform-origin: center center;
+  transform: scale(1, 1);
+  transition: transform 1s ease;
+}
+
+.button-container3:hover .magic-button3::before {
+  transform: scale(1.1, 1.5);
+}
+
+
+
+
+
+
+
 .design-that-inspires,
 .we-are-marasih {
   position: relative;
@@ -367,7 +445,7 @@
 .layer-frame {
   flex: 1;
   border-radius: var(--br-51xl);
-  background: linear-gradient(178.12deg, rgba(90, 97, 255, 0.5), transparent);
+  /* background: linear-gradient(178.12deg, rgba(90, 97, 255, 0.5), transparent); */
   border: 1px solid var(--color-mediumslateblue-400);
   flex-direction: column;
   align-items: center;
@@ -407,11 +485,11 @@
   right: -1920px;
   bottom: -1429px;
   left: 1920px;
-  background: linear-gradient(
+  /* background: linear-gradient(
     121.54deg,
     rgba(176, 255, 250, 0.5),
     rgba(136, 197, 193, 0)
-  );
+  ); */
   transform: rotate(180deg);
   transform-origin: 0 0;
   z-index: 1;
@@ -718,11 +796,11 @@
 }
 .unveiling-our-design-universe {
   flex: 1;
-  background: linear-gradient(
+  /* background: linear-gradient(
     126.68deg,
     rgba(204, 255, 181, 0.5),
     rgba(196, 255, 168, 0) 87.5%
-  );
+  ); */
   flex-direction: column;
   align-items: center;
   padding: var(--padding-46xl) var(--padding-34xl) var(--padding-34xl);
@@ -1941,7 +2019,7 @@
 @media screen and (max-width: 1575px) {
   .captivating-user-experiences-parent,
   .component-1-child {
-    flex: 1;
+    /* flex: 1; */
   }
   .component-1,
   .text-child {
