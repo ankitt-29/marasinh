@@ -1,7 +1,7 @@
 body {
   zoom: 67% !important;
 
- 
+
 }
 
 /* ---------------   rectangle          --------------------- */
@@ -10,38 +10,57 @@ body {
 .custom-input {
   width: 685px;
   height: 108px;
-    border: 1px solid rgba(124, 100, 147, 1);
+  border: 1px solid rgba(124, 100, 147, 1);
   border-radius: 38px;
   box-sizing: border-box;
   background-color: rgba(255, 255, 255, 0.05);
-  margin: 10px; /* Adjust margin as needed */
+  margin: 10px;
+  /* Adjust margin as needed */
+}
+
+.custom-input::placeholder {
+  position: absolute;
+  font-weight: 600;
+  font-size: 30px;
+  font-family: var(--font-figtree);
+  color: #6B6B6B;
+  top: 32px;
+  margin-left: 23px;
+
+
 }
 
 
-
-.e145_4457 { 
-	background-color:rgba(17.395519763231277, 17.395519763231277, 17.395519763231277, 0.4000000059604645);
-	width:1620px;
-	height:1477px;
-	border-top-left-radius:45px;
-	border-top-right-radius:45px;
-	border-bottom-left-radius:45px;
-	border-bottom-right-radius:45px;
+.custom-input:focus {
+  color: #fff;
+  font-size: 30px;
+  font-family: var(--font-figtree);
 }
 
 
+.custom-input:focus {
+  color: #fff;
+  font-size: 30px;
+  font-family: var(--font-figtree);
+}
+.custom-input:not(:focus) {
+  color: #fff;
+  font-size: 30px;
+  font-family: var(--font-figtree);
+}
 
 
+.e145_4457 {
+  background-color: rgba(17.395519763231277, 17.395519763231277, 17.395519763231277, 0.4000000059604645);
+  width: 1620px;
+  height: 1453px;
+  border-top-left-radius: 45px;
+  border-top-right-radius: 45px;
+  border-bottom-left-radius: 45px;
+  border-bottom-right-radius: 45px;
+  border: 1px solid #9152BE;
 
-
-
-
-
-
-
-
-
-
+}
 
 
 
@@ -927,6 +946,7 @@ body {
   display: inline-block;
   z-index: 1;
 }
+
 .frame-child2,
 .rectangle-parent1 {
   border-radius: var(--br-19xl);
@@ -946,10 +966,13 @@ body {
   min-width: 445px;
   z-index: 2;
 }
+
 .your-phone-number:focus {
-  background-color: transparent; /* Set background color to transparent on focus */
+  background-color: transparent;
+  /* Set background color to transparent on focus */
   outline: none;
 }
+
 .frame-child2 {
   height: 108px;
   width: 685px;
@@ -993,11 +1016,12 @@ body {
 
 .content-area1,
 .design-studio-frame {
-  align-self: stretch;
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
   max-width: 100%;
+
+  align-items: center;
 }
 
 .content-area1 {
@@ -1625,7 +1649,7 @@ body {
   padding: var(--padding-71xl) var(--padding-49xl) var(--padding-49xl);
   position: relative;
   gap: var(--gap-36xl);
-  margin-top:-87px;
+  margin-top: -87px;
 }
 
 .dribbble-icon-frame {
@@ -1826,7 +1850,7 @@ body {
   font-size: var(--font-size-13xl);
   color: var(--color-darkgray-100);
   font-family: var(--font-figtree);
- 
+
 }
 
 .background-rectangle,
@@ -2203,7 +2227,11 @@ body {
 }
 
 .design-studio-container {
-  gap: var(--gap-61xl);
+
+  gap: 76px;
+  /* Replace 20px with the actual value of --gap-61xl */
+
+
 }
 
 .marasih-studio-all {

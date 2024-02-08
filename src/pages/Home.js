@@ -139,7 +139,7 @@ const HeaderFrame = () => {
               src="/-emoji-waving-hand-1.svg"
             />
           </button> */}
-         <div className="button-container3">
+          <div className="button-container3">
             <a href="#" className="magic-button3">Let’s talk  <img
               className="emoji-waving-hand1"
               alt=""
@@ -149,14 +149,47 @@ const HeaderFrame = () => {
 
         </div>
       </div>
+      <div className="crafted-box">
+        <img className="inner-img" src="/squar-2.png"></img>
+
+        <div className="crafted-inner">
+
+        </div>
+        <div class="outlined-circle" />
+
+      </div>
+      <div className="crafted-box">
+        <img className="inner-img" src="/squar-2.png"></img>
+
+        <div className="crafted-inner">
+
+        </div>
+        <div class="outlined-circle" />
+
+      </div>
+
+      <div className="crafted-box">
+        <img className="inner-img" src="/squar-2.png"></img>
+
+        <div className="crafted-inner">
+
+        </div>
+        <div class="outlined-circle" />
+
+      </div>
+
+
       <section className="rectangle-frame">
-        <div className="">
+        <div className="   ">
           <div className="layer-frame-child" />
           {/* <img className="mask-group-icon" alt="" src="/mask-group.svg" /> */}
           <div className="header-text-container">
             <div className="crafted-with-care">Crafted with Care</div>
           </div>
-          <div className="rectangle-shape1">
+          <div className="1">
+
+
+
             <div className="frame-content-container">
               <h2 className="crafted-with-precision-container">
                 <span>{`Crafted with Precision, `}</span>
@@ -614,7 +647,7 @@ const HeaderFrame = () => {
           </div>
         </div>
       </section> */}
-        <div className="custom-rectangle">
+      <div className="custom-rectangle">
         <section className="empty-ellipse">
           {/* <div className="background-rectangle" /> */}
 
@@ -644,18 +677,18 @@ const HeaderFrame = () => {
                   <div className="social-icons-frame">
 
                     <div className="ellipse-parent">
-                    <svg width="801" height="864" viewBox="0 0 801 864" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <g filter="url(#filter0_f_408_2585)">
-                            <circle cx="241" cy="560" r="160" fill="#777CF6" fill-opacity="0.4" />
-                          </g>
-                          <defs>
-                            <filter id="filter0_f_408_2585" x="-319" y="0" width="1120" height="1120" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                              <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                              <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
-                              <feGaussianBlur stdDeviation="200" result="effect1_foregroundBlur_408_2585" />
-                            </filter>
-                          </defs>
-                        </svg>
+                      <svg width="801" height="864" viewBox="0 0 801 864" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g filter="url(#filter0_f_408_2585)">
+                          <circle cx="241" cy="560" r="160" fill="#777CF6" fill-opacity="0.4" />
+                        </g>
+                        <defs>
+                          <filter id="filter0_f_408_2585" x="-319" y="0" width="1120" height="1120" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+                            <feGaussianBlur stdDeviation="200" result="effect1_foregroundBlur_408_2585" />
+                          </filter>
+                        </defs>
+                      </svg>
 
                       <div className="" />
 

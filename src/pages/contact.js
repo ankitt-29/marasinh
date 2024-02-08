@@ -176,68 +176,26 @@ const Contact = () => {
 
             <div className="design-studio-frame">
 
-              {/* <div className="content-area">
-              <div className="rectangle-container">
-                <div className="frame-inner" />
-                <input
-                  className="your-name"
-                  placeholder="Your name*"
-                  type="text"
-                />
-              </div>
-              <div className="rectangle-container">
-                <div className="rectangle-div" />
-                <input
-                  className="your-email"
-                  placeholder="Your Email* "
-                  type="text"
-                />
-              </div>
-            </div> */}
+
               <div className="input-container">
-                <input className="custom-input" />
-                <input className="custom-input" />
-                <input className="custom-input" />
-                <input className="custom-input" />
+                <input placeholder="Your Name*"
+                  type="text" className="custom-input" />
+                <input placeholder="Your Email*"
+                  type="text" className="custom-input" />
+                <input placeholder="Your phone number"
+                  type="text" className="custom-input" />
+                <input placeholder="Your organization name"
+                  type="text" className="custom-input" />
               </div>
 
 
               <div className="content-area1">
 
-                {/* <div className="rectangle-parent1">
-                <input
-                  className="your-phone-number"
-                  placeholder="Your Name*"
-                  type="text"
-                />
-              </div>
-              <div className="rectangle-parent2">
-                <div className="frame-child2" />
-                <input
-                  className="your-organisation-name"
-                  placeholder="Your Email*"
-                  type="text"
-                />
-              </div> */}
 
               </div>
               <div className="content-area1">
 
-                {/* <div className="rectangle-parent1">
-                <input
-                  className="your-phone-number"
-                  placeholder="Your phone number"
-                  type="text"
-                />
-              </div> */}
-                {/* <div className="rectangle-parent2">
-                <div className="frame-child2" />
-                <input
-                  className="your-organisation-name"
-                  placeholder="Your organisation name"
-                  type="text"
-                />
-              </div> */}
+
               </div>
 
               <div className="emoji-dizzy-frame">
