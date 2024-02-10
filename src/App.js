@@ -9,6 +9,7 @@ import ContainerGroup from "./pages/contact";
 import HeaderFrame from "./pages/Home";
 import FrameHeader from "./pages/FrameHeader";
 import Contact from "./pages/contact";
+import SimpleSlider from "./SimpleSlider";
 
 function App() {
   const action = useNavigationType();
@@ -22,6 +23,8 @@ function App() {
       <Route path="/contact" element={<Contact />} />
       <Route path="/home" element={<HeaderFrame />} />
       <Route path="/frame-header" element={<FrameHeader />} />
+      <Route path="/demo" element={<SimpleSlider />} />
+
 
     </Routes>
   );

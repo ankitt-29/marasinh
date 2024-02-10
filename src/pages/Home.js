@@ -1,7 +1,9 @@
 import { useState } from "react";
 
 import "./home.css";
-
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 const HeaderFrame = () => {
   const [selectedServices, setSelectedServices] = useState([]);
   const [selectedBudget, setSelectedBudget] = useState('');
@@ -88,6 +90,18 @@ const HeaderFrame = () => {
     setIsHoveredBento(false);
   };
 
+
+  const settings = {
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    dots: false,
+    arrows: true,
+    centerMode: false,
+    focusOnSelect: false,
+    infinite: true,
+  };
+
+
   return (
     <div className="header-frame">
       <div className="we-are-marasih">We are marasih studio</div>
@@ -149,40 +163,79 @@ const HeaderFrame = () => {
 
         </div>
       </div>
-      <div className="crafted-box">
-        <img className="inner-img" src="/squar-2.png"></img>
+      <div className="outer-box">
 
-        <div className="crafted-inner">
 
+        {/* <div className="crafted-with-care-text">Crafted with Care</div> */}
+        <div className="rectangle-frame">
+          <div className="1">
+            <div className="header-text-container">
+              <div className="crafted-with-care">Crafted with Care</div>
+
+            </div>
+            <div className="frame-content-container">
+              <h2 className="crafted-with-precision-container">
+                <span>{`Crafted with Precision, `}</span>
+                <span className="infused-with-passion">
+                  Infused with Passion
+                </span>
+              </h2>
+
+            </div>
+
+          </div>
         </div>
-        <div class="outlined-circle" />
+        <div className="crafted-container">
 
-      </div>
-      <div className="crafted-box">
-        <img className="inner-img" src="/squar-2.png"></img>
 
-        <div className="crafted-inner">
 
+
+        <Slider {...settings}>
+
+          <div className="crafted-box">
+            <img className="inner-img" src="/squar-2.png"></img>
+            <div className="crafted-inner">
+              <div className="my-div">
+                <div className="crafted-card-big-text"> FelxForce</div>
+                <div className="crafted-card-small-text">UX research & UI design</div>
+              </div>
+            </div>
+
+            <div class="outlined-circle"> <img className="arrow-left" src="/arrow-left.png"></img></div>
+          </div>
+
+          <div className="crafted-box">
+            <img className="inner-img" src="/squar-2.png"></img>
+            <div className="crafted-inner">
+              <div className="my-div1">
+                <div className="crafted-card-big-text"> Grocers</div>
+                <div className="crafted-card-small-text">Website design</div>
+              </div>
+            </div>
+
+            <div class="outlined-circle"> <img className="arrow-left" src="/arrow-left.png"></img></div>
+          </div>
+
+          <div className="crafted-box">
+            <img className="inner-img" src="/squar-2.png"></img>
+            <div className="crafted-inner">
+              <div className="my-div2">
+                <div className="crafted-card-big-text"> Socialline</div>
+                <div className="crafted-card-small-text">A ultimate social media app</div>
+              </div>
+            </div>
+
+            <div class="outlined-circle"> <img className="arrow-left" src="/arrow-left.png"></img></div>
+          </div>
+          </Slider>
         </div>
-        <div class="outlined-circle" />
-
       </div>
 
-      <div className="crafted-box">
-        <img className="inner-img" src="/squar-2.png"></img>
-
-        <div className="crafted-inner">
-
-        </div>
-        <div class="outlined-circle" />
-
-      </div>
 
 
       <section className="rectangle-frame">
         <div className="   ">
           <div className="layer-frame-child" />
-          {/* <img className="mask-group-icon" alt="" src="/mask-group.svg" /> */}
           <div className="header-text-container">
             <div className="crafted-with-care">Crafted with Care</div>
           </div>
@@ -872,7 +925,7 @@ const HeaderFrame = () => {
           </div>
         </section>
       </div >
-    </div>
+    </div >
   );
 };
 
