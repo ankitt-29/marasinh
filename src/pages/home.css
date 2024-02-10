@@ -83,7 +83,7 @@
   padding: 20px; 
   box-sizing: border-box;
   margin: 20px; 
-  background: linear-gradient(to bottom, rgba(90, 97, 255, 0.2), rgba(0, 0, 0, 0.2)); /* Adjust opacity */
+  background: linear-gradient(to bottom, rgba(90, 97, 255, 0.1), rgba(0, 0, 0, 0.1));
 }
 
 .crafted-with-care-text {
