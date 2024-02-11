@@ -130,10 +130,10 @@
   display: flex;
   justify-content: center;
   text-align: center;
-  height: 593px;
-  margin-left: -19px;
-  margin-top: -14px;
-  width: 579px;
+  height: 560px;
+  margin-left: 20px;
+  margin-top: 18px;
+  width: 499px;
 }
 .new-outlined-circle {
   width: 73.868423px;
@@ -154,6 +154,43 @@
   display: flex;
 }
 
+.circle-container {
+  position: relative;
+}
+
+.circle-button1 {
+  width: 65.868423px;
+  height: 65.868423px;
+  border: 1px solid rgba(90, 97, 255, 0.5);
+  border-radius: 50%;
+  position: absolute;
+  top: 19px;
+  background: #1D1D1D;
+
+  right: 107px;
+  z-index: 1;
+}
+
+.circle-button2 {
+  width: 65.868423px;
+  height: 65.868423px;
+  border: 1px solid rgba(90, 97, 255, 0.5);
+  border-radius: 50%;
+  position: absolute;
+  top: 19px;
+  background: #1D1D1D;
+
+  right: 20px;
+  z-index: 1;
+}
+
+.arrow-right-top
+{
+  width: 48px;
+  margin-top: 3px;
+  margin-left: 2px;
+  height: 44px 
+}
 
 .outlined-circle {
   width: 73.868423px;
@@ -169,11 +206,11 @@
 }
 .my-div {
   margin-top: -32px;
-  margin-left: -192px;
+  margin-left: -245px;
 }
 .my-div1 {
   margin-top: -34px;
-  margin-left: -286px;
+  margin-left: -268px 
 
 }
 .my-div2 {
@@ -181,19 +218,46 @@
   margin-left: -154px;
 }
 
+.my-div3 {
+  margin-top: -29px;
+  margin-left: -90px
+}
+
 .crafted-card-big-text {
   font-family: var(--font-figtree);
-  font-size: 35px;
+  font-size: 30px;
   font-weight: 600;
   color: #fff;
   margin-bottom: -38px;
 
 }
+.arrow-icon-1
+{
+  color: #5A61FF;
+  font-size: 40px;
+  transform: rotate(-45deg); 
+}
+.arrow-top
+{
+ color: #5A61FF;
+ font-size: 35px;
+}
+.arrow-top-left
+{
+  color: #5A61FF;
+  font-size: 35px;
+  transform: rotate(-180deg);
+}
+.outlined-circle:hover .arrow-icon-1 {
+  color: #fff; 
+}
 
-
+.outlined-circle:hover {
+  border-color: #fff; 
+}
 .crafted-card-small-text {
   font-family: var(--font-figtree);
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 400;
   color: #b2b2b2;
   margin-top: 37px;

@@ -1,10 +1,13 @@
-import { useState } from "react";
+import React, { useRef, useState } from 'react';
 
 import "./home.css";
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 const HeaderFrame = () => {
+  const sliderRef = useRef(null);
+
+
   const [selectedServices, setSelectedServices] = useState([]);
   const [selectedBudget, setSelectedBudget] = useState('');
   const [isHoveredDribbble, setIsHoveredDribbble] = useState(false);
@@ -99,7 +102,18 @@ const HeaderFrame = () => {
     arrows: false, // Set arrows to false to hide navigation buttons
 
   };
-  
+
+  const handleNext = () => {
+    if (sliderRef.current) {
+      sliderRef.current.slickNext();
+    }
+  };
+
+  const handlePrev = () => {
+    if (sliderRef.current) {
+      sliderRef.current.slickPrev();
+    }
+  };
   return (
     <div className="header-frame">
       <div className="we-are-marasih">We are marasih studio</div>
@@ -161,10 +175,24 @@ const HeaderFrame = () => {
 
         </div>
       </div>
-      <div className="outer-box">
 
+      <div className="outer-box">
+        <div className="circle-container">
+
+          <button className="circle-button1" onClick={handlePrev}>
+            {/* <img className="arrow-right-top" src="/arrow-left-top.png" alt="Arrow Left Top" /> */}
+            <i class="fa-solid fa-arrow-right arrow-top-left"></i>
+
+          </button>
+          <button className="circle-button2" onClick={handleNext}>
+            {/* <img className="arrow-right-top" src="/arrow-right-top.png" alt="Arrow Right Top" /> */}
+            <i class="fa-solid fa-arrow-right arrow-top"></i>
+
+          </button>
+        </div>
 
         <div className="rectangle-frame">
+
           <div className="1">
             <div className="header-text-container">
               <div className="crafted-with-care">Crafted with Care</div>
@@ -183,71 +211,74 @@ const HeaderFrame = () => {
           </div>
         </div>
 
-        
-        <Slider {...settings}>
-       
-       <div className="crafted-container" key={1}>
-         <div className="crafted-box">
-           <img className="inner-img" src="/squar-2.png" alt="Card 1" />
-           <div className="crafted-inner">
-             <div className="my-div">
-               <div className="crafted-card-big-text">FelxForce</div>
-               <div className="crafted-card-small-text">UX research & UI design</div>
-             </div>
-           </div>
-           <div className="outlined-circle">
-             <img className="arrow-left" src="/arrow-left.png" alt="Arrow Left" />
-           </div>
-         </div>
-       </div>
 
-       <div className="crafted-container" key={1}>
-         <div className="crafted-box">
-           <img className="inner-img" src="/squar-2.png" alt="Card 1" />
-           <div className="crafted-inner">
-             <div className="my-div">
-               <div className="crafted-card-big-text">FelxForce</div>
-               <div className="crafted-card-small-text">UX research & UI design</div>
-             </div>
-           </div>
-           <div className="outlined-circle">
-             <img className="arrow-left" src="/arrow-left.png" alt="Arrow Left" />
-           </div>
-         </div>
-       </div>
 
-    
-       <div className="crafted-container" key={2}>
-         <div className="crafted-box">
-           <img className="inner-img" src="/squar-2.png" alt="Card 2" />
-           <div className="crafted-inner">
-             <div className="my-div1">
-               <div className="crafted-card-big-text">Grocers</div>
-               <div className="crafted-card-small-text">Website design</div>
-             </div>
-           </div>
-           <div className="outlined-circle">
-             <img className="arrow-left" src="/arrow-left.png" alt="Arrow Left" />
-           </div>
-         </div>
-       </div>
+        <Slider ref={sliderRef} {...settings}>
 
-  
-       <div className="crafted-container" key={3}>
-         <div className="crafted-box">
-           {/* <img className="inner-img" src="/squar-2.png" alt="Card 3" /> */}
-           {/* <div className="crafted-inner">
+          <div className="crafted-container" key={1}>
+            <div className="crafted-box">
+              <img className="inner-img" src="/Mask group 1.png" alt="Card 1" />
+              <div className="crafted-inner">
+                <div className="my-div">
+                  <div className="crafted-card-big-text">Socialline</div>
+                  <div className="crafted-card-small-text">UX research & UI design</div>
+                </div>
+              </div>
+              <div className="outlined-circle">
+                <i class="fa-solid fa-arrow-right arrow-icon-1"></i>
+              </div>
+            </div>
+          </div>
+
+          <div className="crafted-container" key={2}>
+            <div className="crafted-box">
+              <img className="inner-img" src="/Mask group 2.png" alt="Card 1" />
+              <div className="crafted-inner">
+                <div className="my-div3">
+                  <div className="crafted-card-big-text">Dor - Dating app</div>
+                  <div className="crafted-card-small-text">Design System, UX research and UI design</div>
+                </div>
+              </div>
+              <div className="outlined-circle">
+                <i class="fa-solid fa-arrow-right arrow-icon-1"></i>
+
+              </div>
+            </div>
+          </div>
+
+
+          <div className="crafted-container" key={3}>
+            <div className="crafted-box">
+              <img className="inner-img" src="/Mask group 3.png" alt="Card 2" />
+              <div className="crafted-inner">
+                <div className="my-div1">
+                  <div className="crafted-card-big-text">Panache</div>
+                  <div className="crafted-card-small-text">Logo & Brand identity</div>
+                </div>
+              </div>
+              <div className="outlined-circle">
+                <i class="fa-solid fa-arrow-right arrow-icon-1"></i>
+
+              </div>
+            </div>
+          </div>
+
+
+          <div className="crafted-container" key={4}>
+            <div className="crafted-box">
+              {/* <img className="inner-img" src="/squar-2.png" alt="Card 3" /> */}
+              {/* <div className="crafted-inner">
              <div className="my-div2">
                <div className="crafted-card-big-text">Socialline</div>
                <div className="crafted-card-small-text">A ultimate social media app</div>
              </div>
            </div> */}
-           {/* <div className="outlined-circle">
+              {/* <div className="outlined-circle">
              <img className="arrow-left" src="/arrow-left.png" alt="Arrow Left" />
            </div> */}
-         </div>
-       </div>
-     </Slider>
+            </div>
+          </div>
+        </Slider>
       </div>
 
 

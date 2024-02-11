@@ -7,11 +7,11 @@ const SimpleSlider = () => {
   const settings = {
     dots: true,
     infinite: true,
-    speed: 500,
+    // speed: 600,
     slidesToShow: 3,
     slidesToScroll: 1,
   };
-
+x 
   return (
     <div className="outer-box">
       <Slider {...settings}>

@@ -10,6 +10,7 @@ import HeaderFrame from "./pages/Home";
 import FrameHeader from "./pages/FrameHeader";
 import Contact from "./pages/contact";
 import SimpleSlider from "./SimpleSlider";
+import MainFrame from "./pages/MainFrame";
 
 function App() {
   const action = useNavigationType();
@@ -24,6 +25,9 @@ function App() {
       <Route path="/home" element={<HeaderFrame />} />
       <Route path="/frame-header" element={<FrameHeader />} />
       <Route path="/demo" element={<SimpleSlider />} />
+      <Route path="/main" element={<MainFrame />} />
+
+
 
 
     </Routes>
