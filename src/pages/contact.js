@@ -161,21 +161,26 @@ const Contact = () => {
 
 
       </section>
+      {/* <div className="twitter-icon2" /> */}
 
       <section className="linked-in-icon-parent">
+      <div className="twitter-icon2" />
 
         <div class="e145_4457">
+
           <div className="linked-in-icon">
 
             <div className="" />
+
             <div className="dribbble-icon">
               <div className="behance-icon">
-
                 <div className="" />
+                {/* <div className="twitter-icon1" /> */}
 
                 <h2 className="lets-create-special">Let’s create special</h2>
               </div>
             </div>
+            {/* <div className="frame-group" /> */}
 
             <div className="design-studio-frame">
 

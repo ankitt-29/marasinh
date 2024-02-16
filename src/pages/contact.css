@@ -51,7 +51,15 @@ body {
   font-size: 30px;
   font-family: var(--font-figtree);
 }
-
+.twitter-icon2 {
+  height: 261px;
+  width: 261px;
+  bottom: -78px;
+  left: 6px;
+  left: 20px;
+  border-radius: 50%;
+  background-color: var(--color-plum-100);
+}
 
 .e145_4457 {
   background-color: rgba(17.395519763231277, 17.395519763231277, 17.395519763231277, 0.4000000059604645);
@@ -62,6 +70,12 @@ body {
   border-bottom-left-radius: 45px;
   border-bottom-right-radius: 45px;
   border: 1px solid #9152BE;
+  position: relative;
+    overflow: hidden;
+    z-index: 1;
+    backdrop-filter: blur(300px);
+
+
 
 }
 
@@ -710,23 +724,24 @@ body {
   color: #fff;
 }
 
-
 .twitter-icon {
   height: 261px;
   width: 261px;
-  bottom: -143px;
-  left: -55px;
-
   border-radius: 50%;
   background-color: var(--color-plum-100);
+  position: absolute;
+  top: 50%;
+  right: -30%; /* Adjust the right distance as needed */
+  transform: translateY(-50%);
 }
-
+.circle11{
+  position: absolute;
+}
 .twitter-icon1 {
   height: 261px;
   width: 261px;
   bottom: -78px;
   top: -51px;
-
   left: -41px;
   border-radius: 50%;
   background-color: var(--color-plum-100);
@@ -877,6 +892,8 @@ body {
   position: relative;
   display: none;
 }
+
+
 
 .your-email {
   width: 100%;
@@ -1824,6 +1841,30 @@ body {
   min-width: 937px;
 }
 
+.frame-group {
+  height: 261px;
+  width: 261px;
+  bottom: -108px;
+  left: -90px;
+  border-radius: 50%;
+  background-color: #b494ce;
+  position: absolute;
+  margin: 0 !important;
+}
+.ellipse1 {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: -0.5px;
+  bottom: 0;
+  left: 0.5px;
+  border-radius: 45px;
+  background-color: rgba(17, 17, 17, 0.4);
+  backdrop-filter: blur(300px);
+  border: 1px solid rgba(145, 82, 189, 0.49);
+  box-sizing: border-box;
+  z-index: 1;
+}
 .instagram-icon-frame,
 .linked-in-icon-parent,
 .text-frame-with-image {
@@ -1854,6 +1895,7 @@ body {
   font-size: var(--font-size-13xl);
   color: var(--color-darkgray-100);
   font-family: var(--font-figtree);
+  position: relative;
 
 }
 

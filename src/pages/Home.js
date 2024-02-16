@@ -283,7 +283,7 @@ const HeaderFrame = () => {
 
 
 
-      <section className="rectangle-frame">
+      {/* <section className="rectangle-frame">
         <div className="   ">
           <div className="layer-frame-child" />
           <div className="header-text-container">
@@ -317,7 +317,7 @@ const HeaderFrame = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
       <section className="digits-of-design">
         <div className="unveiling-our-design-universe">
           <div className="unveiling-our-design-universe-child" />
@@ -346,14 +346,14 @@ const HeaderFrame = () => {
               <div className="got-an-idea1">
                 <b className="we-provides">{`> WE PROVIDES:`}</b>
                 <div className="header-frame1">
-                  <div className="frame-group">
-                    <img
+                  <div className="">
+                    {/* <img
                       className="group-icon"
                       loading="eager"
                       alt=""
                       src="/group-34365.svg"
-                    />
-                    <div className="ux-research1">UX Research</div>
+                    /> */}
+                    {/* <div className="ux-research1">UX Research</div> */}
                   </div>
                   <div className="frame-parent1">
                     <img
@@ -592,7 +592,7 @@ const HeaderFrame = () => {
                 recommend him highly for any project in UI/UX design.
               </div>
             </div>
-            <img className="icon" loading="eager" alt="" src="/.svg" />
+            <img className="icon" loading="eager" alt="" src="/coma.png" />
           </div>
           <div className="designer-frame-inner">
             <div className="ellipse-group">
