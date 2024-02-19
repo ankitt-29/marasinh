@@ -230,6 +230,8 @@
 }
 .creative-mastery {
   background: linear-gradient(133.48deg, #8ca5ff, #84daff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparen
 }
 .crafting-designs-that-container {
   margin: 0;
@@ -279,6 +281,8 @@
   -webkit-text-fill-color: transparent;
   display: inline-block;
   max-width: 100%;
+  font-family: var(--font-figma-hand);
+
 }
 .letssail-creativity-frame {
   width: 498px;
@@ -860,10 +864,12 @@
 }
 .rectangle-parent16 {
   width: 800px;
-  background-color: var(--color-white);
+  /* background-color: var(--color-white); */
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  left: -4.4px;
+
   justify-content: flex-start;
   padding: 754px var(--padding-21xl) var(--padding-37xl);
   box-sizing: border-box;

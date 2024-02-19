@@ -374,6 +374,8 @@
   background: linear-gradient(180deg, #5f5f5f, #fff 41.15%, #3f3e3e),
     linear-gradient(90.06deg, #fff, #b4b4b4 48.96%, #fff), #fff;
   display: inline-block;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .a-tale-of {
   margin: 0;
@@ -382,6 +384,8 @@
   font-weight: 500;
   font-family: var(--font-figtree);
   background: linear-gradient(90.03deg, #715aff, #fff), #fff;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .ellipse {
   display: flex;
@@ -546,7 +550,12 @@
 .at-marasih-studio,
 .blank-line,
 .every-project-is {
-  margin: 0;
+  /* margin: 0; */
+  margin-top: -31px;
+  font-size: 26px;
+
+
+
 }
 .at-marasih-studio-container {
   height: 462px;
@@ -672,7 +681,9 @@
 .at-marasih-studio3,
 .blank-line2,
 .staying-at-the {
-  margin: 0;
+  margin-top: -45px;
+  font-size: 27px;
+
 }
 .at-marasih-studio-container2 {
   height: 462px;
@@ -708,6 +719,7 @@
   right: -0.5px;
   bottom: 0;
   left: 0.5px;
+  
 }
 .frame-child31 {
   border-radius: var(--br-26xl);
@@ -722,6 +734,8 @@
   overflow: hidden;
   max-height: 100%;
   z-index: 2;
+  margin-left: -106px !important;
+
 }
 .frame-group-child {
   height: 258px;
@@ -809,10 +823,15 @@
   font-weight: 600;
   background: linear-gradient(90.32deg, #fff, #a7afff 47.92%, #8b62ff), #fff;
   display: inline-block;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .expertise-showcase,
 .marasih-studios {
   background: linear-gradient(180deg, #5f5f5f, #fff 41.15%, #3f3e3e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
 }
 .marasih-studios-expertise-container {
   margin: 0;

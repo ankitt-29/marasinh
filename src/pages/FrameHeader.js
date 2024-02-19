@@ -19,7 +19,7 @@ const FrameHeader = () => {
           alt=""
           src="/layer-1.svg"
         />
-        <div className="text-brand-name">
+        {/* <div className="text-brand-name">
           <div className="ellipse-emblem">
             <div className="frame-content">
               <div className="work5">Work</div>
@@ -29,7 +29,19 @@ const FrameHeader = () => {
               </div>
               <div className="contact-us5">Contact us</div>
             </div>
-          </div>
+          </div> */} <div className="inner-frames">
+            <div className="content-frame">
+              <div className="link-frame">
+                <div className="text-container">
+                  <a href="#" className="work">Work</a>
+                </div>
+                <a href="#" className="about">About</a>
+                <div className="contact-info-frame">
+                  <div className="" />
+                  <a href="#" className="contact-us">Contact Us</a>
+                </div>
+              </div>
+            </div>
           <button className="rectangle-parent19">
             <div className="frame-child28" />
             <div className="lets-talk7">Let’s Talk</div>
@@ -118,14 +130,14 @@ const FrameHeader = () => {
           <div className="text-block">
             <div className="text-block-child" />
             <div className="divider">
-              <img className="mask-group-icon15" alt="" src="/mask-group.svg" />
+              {/* <img className="mask-group-icon15" alt="" src="/mask-group.svg" /> */}
               <div className="image">
-                <img
+                {/* <img
                   className="image-child"
                   loading="eager"
                   alt=""
                   src="/group-34407@2x.png"
-                />
+                /> */}
                 <h2 className="our-mission">Our Mission</h2>
               </div>
               <div className="pixels-with-purpose">Pixels with Purpose</div>
@@ -141,15 +153,19 @@ const FrameHeader = () => {
                 drive engagement, and power brand success. From sleek websites
                 to user-friendly apps, we weave together technology and
                 creativity to build bridges between brands and their audiences,
-                creating connections that last.
-              </p>
-              <p className="blank-line">&nbsp;</p>
-              <p className="every-project-is">
+                creating connections that last.   <br></br><br></br>
                 Every project is fueled by our relentless pursuit of design
                 excellence. We push boundaries, challenge conventions, and
                 deliver results that exceed expectations. Join us on this
                 journey to transform the digital landscape, one pixel at a time.
               </p>
+              {/* <p className="blank-line">&nbsp;</p>
+              <p className="every-project-is">
+                Every project is fueled by our relentless pursuit of design
+                excellence. We push boundaries, challenge conventions, and
+                deliver results that exceed expectations. Join us on this
+                journey to transform the digital landscape, one pixel at a time.
+              </p> */}
             </div>
           </div>
         </div>
@@ -180,15 +196,19 @@ const FrameHeader = () => {
               we ensure impactful designs within budgetary realms. Our designs
               thrive on collaborative synergy. Sustainability is the heartbeat
               of our innovation. Continuous learning keeps us at the forefront
-              of technology and design trends.
-            </p>
-            <p className="blank-line1">&nbsp;</p>
-            <p className="at-marasih-studio2">
+              of technology and design trends. <br></br>
               At Marasih Studio, our values aren’t just principles; they’re the
               essence of our studio, a transformative journey where creativity
               meets integrity, and design becomes a powerful force for positive
               change
             </p>
+            {/* <p className="blank-line1">&nbsp;</p>
+            <p className="at-marasih-studio2">
+              At Marasih Studio, our values aren’t just principles; they’re the
+              essence of our studio, a transformative journey where creativity
+              meets integrity, and design becomes a powerful force for positive
+              change
+            </p> */}
           </div>
         </div>
         <div className="line-segment2">
@@ -201,15 +221,19 @@ const FrameHeader = () => {
                 design. Our mission is to pioneer innovative and impactful
                 designs, pushing boundaries and redefining digital aesthetics.
                 We aspire to redefine user experiences, creating designs that
-                seamlessly blend creativity and functionality.
-              </p>
-              <p className="blank-line2">&nbsp;</p>
-              <p className="staying-at-the">
+                seamlessly blend creativity and functionality.<br></br><br></br>
                 Staying at the forefront of emerging technologies is a
                 commitment we hold dear, ensuring that our designs not only meet
                 current standards but set new ones. we envision a future where
                 our designs inspire, engage, and leave a lasting impression.
               </p>
+              {/* <p className="blank-line2">&nbsp;</p>
+              <p className="staying-at-the">
+                Staying at the forefront of emerging technologies is a
+                commitment we hold dear, ensuring that our designs not only meet
+                current standards but set new ones. we envision a future where
+                our designs inspire, engage, and leave a lasting impression.
+              </p> */}
             </div>
           </div>
           <div className="rectangle-parent22">

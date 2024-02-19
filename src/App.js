@@ -23,7 +23,7 @@ function App() {
     <Routes>
       <Route path="/contact" element={<Contact />} />
       <Route path="/home" element={<HeaderFrame />} />
-      <Route path="/frame-header" element={<FrameHeader />} />
+      <Route path="/about" element={<FrameHeader />} />
       <Route path="/demo" element={<SimpleSlider />} />
       <Route path="/main" element={<MainFrame />} />
 

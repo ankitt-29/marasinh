@@ -46,11 +46,13 @@ body {
   font-size: 30px;
   font-family: var(--font-figtree);
 }
+
 .custom-input:not(:focus) {
   color: #fff;
   font-size: 30px;
   font-family: var(--font-figtree);
 }
+
 .twitter-icon2 {
   height: 261px;
   width: 261px;
@@ -71,9 +73,9 @@ body {
   border-bottom-right-radius: 45px;
   border: 1px solid #9152BE;
   position: relative;
-    overflow: hidden;
-    z-index: 1;
-    backdrop-filter: blur(300px);
+  overflow: hidden;
+  z-index: 1;
+  backdrop-filter: blur(300px);
 
 
 
@@ -95,7 +97,10 @@ body {
   filter: blur(200px);
 
 }
+.pink-shadow-footer{
+  margin-left: 9px;
 
+}
 .custom-rectangle {
   width: auto;
   height: auto;
@@ -674,6 +679,11 @@ body {
   margin: 0 !important;
 }
 
+.twitter-icon-another {
+  position: absolute;
+  margin: 0 !important;
+}
+
 .twitter-icon2 {
   position: absolute;
   margin: 0 !important;
@@ -731,18 +741,31 @@ body {
   background-color: var(--color-plum-100);
   position: absolute;
   top: 50%;
-  right: -30%; /* Adjust the right distance as needed */
+  right: -30%;
+  /* Adjust the right distance as needed */
   transform: translateY(-50%);
 }
-.circle11{
+
+.circle11 {
   position: absolute;
 }
+
 .twitter-icon1 {
   height: 261px;
   width: 261px;
   bottom: -78px;
-  top: -51px;
-  left: -41px;
+  top: -50px;
+  left: 13px;
+  border-radius: 50%;
+  background-color: var(--color-plum-100);
+}
+
+.twitter-icon-another {
+  height: 261px;
+  width: 261px;
+  bottom: -78px;
+  top: 11px;
+  left: 13px;
   border-radius: 50%;
   background-color: var(--color-plum-100);
 }
@@ -1851,6 +1874,7 @@ body {
   position: absolute;
   margin: 0 !important;
 }
+
 .ellipse1 {
   width: 100%;
   height: 100%;
@@ -1865,6 +1889,7 @@ body {
   box-sizing: border-box;
   z-index: 1;
 }
+
 .instagram-icon-frame,
 .linked-in-icon-parent,
 .text-frame-with-image {
@@ -2872,4 +2897,3 @@ body {
     gap: var(--gap-5xl);
   }
 }
-
