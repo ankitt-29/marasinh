@@ -1,8 +1,8 @@
-body {
+/* body {
   zoom: 67% !important;
 
 
-}
+} */
 
 
 
@@ -2895,5 +2895,32 @@ body {
 
   .container-group {
     gap: var(--gap-5xl);
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  body {
+    font-size: 56px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .custom-svg-container,
+  .facebook-container,
+  .bento-container ,
+  .instagram-svg,
+ .linked-in-svg
+  {
+    width: 23px; 
+    height: 23px; 
+    margin-top: 45px;
+  }
+
+  .custom-svg-container svg,
+  .facebook-container svg,
+  .bento-container svg,
+  .instagram-svg svg,
+  .linked-in-svg svg{
+    width: 100%;
+    height: 100%;
   }
 }

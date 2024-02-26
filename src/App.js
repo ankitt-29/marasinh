@@ -22,10 +22,10 @@ function App() {
   return (
     <Routes>
       <Route path="/contact" element={<Contact />} />
-      <Route path="/home" element={<HeaderFrame />} />
+      <Route path="/" element={<HeaderFrame />} />
       <Route path="/about" element={<FrameHeader />} />
       <Route path="/demo" element={<SimpleSlider />} />
-      <Route path="/main" element={<MainFrame />} />
+      <Route path="/work" element={<MainFrame />} />
 
 
 

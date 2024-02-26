@@ -29,19 +29,24 @@ const FrameHeader = () => {
               </div>
               <div className="contact-us5">Contact us</div>
             </div>
-          </div> */} <div className="inner-frames">
-            <div className="content-frame">
-              <div className="link-frame">
-                <div className="text-container">
-                  <a href="#" className="work">Work</a>
-                </div>
-                <a href="#" className="about">About</a>
-                <div className="contact-info-frame">
-                  <div className="" />
-                  <a href="#" className="contact-us">Contact Us</a>
-                </div>
+          </div> */}
+        <div className="inner-frames">
+          <div className="content-frame">
+            <div className="link-frame">
+              <div className="text-container">
+                <a href="/work" className="work">Work</a>
+              </div>
+              <div className="frame-footer">
+                <div className="group-links" />
+                <a href="/about" className="about3">About</a>
+              </div>
+              {/* <a href="#" className="about">About</a> */}
+              <div className="contact-info-frame">
+                <div className="" />
+                <a href="/contact" className="contact-us">Contact Us</a>
               </div>
             </div>
+          </div>
           <button className="rectangle-parent19">
             <div className="frame-child28" />
             <div className="lets-talk7">Let’s Talk</div>

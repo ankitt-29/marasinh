@@ -334,7 +334,8 @@ const HeaderFrame = () => {
           <div className="component-1">
             <div className="captivating-user-experiences-parent">
               <div className="captivating-user-experiences" />
-              <div className="letscreate-phenomenal">
+              <img></img>
+              {/* <div className="letscreate-phenomenal">
                 <h2 className="ux-research">{`UX Research & UI Designing`}</h2>
                 <div className="explore-extraordinary-ux">
                   Explore extraordinary UX with our research and elevate your
@@ -342,12 +343,12 @@ const HeaderFrame = () => {
                   creativity meets seamless functionality, turning your vision
                   into a captivating digital reality
                 </div>
-              </div>
-              <div className="got-an-idea1">
+              </div> */}
+              {/* <div className="got-an-idea1">
                 <b className="we-provides">{`> WE PROVIDES:`}</b>
                 <div className="header-frame1">
                   <div className="">
-
+                  
                   </div>
                   <div className="frame-parent1">
                     <img
@@ -399,8 +400,8 @@ const HeaderFrame = () => {
                     <div className="prototyping">Prototyping</div>
                   </div>
                 </div>
-              </div>
-              <div className="design-studio-frame3">
+              </div> */}
+              {/* <div className="design-studio-frame3">
                 <div className="explore-work-about-contact">
                   <div className="header-layout">
                     <img
@@ -432,7 +433,7 @@ const HeaderFrame = () => {
                     src="/group-34355-1.svg"
                   />
                 </div>
-              </div>
+              </div> */}
             </div>
             <img
               className="component-1-child"
