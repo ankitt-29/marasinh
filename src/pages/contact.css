@@ -1,14 +1,18 @@
-/* body {
-  zoom: 67% !important;
+.marasinh-contact-page {
+  zoom: 67%;
 
 
-} */
-
-
+}
 
 
 /* ---------------   rectangle          --------------------- */
 
+.pink-round {
+  border-radius: 500px;
+  background-color: rgba(180.00000447034836, 148.000006377697, 206.0000029206276, 0.699999988079071);
+  width: 320px;
+  height: 320px;
+}
 
 .custom-input {
   width: 685px;
@@ -18,7 +22,6 @@
   box-sizing: border-box;
   background-color: rgba(255, 255, 255, 0.05);
   margin: 10px;
-  /* Adjust margin as needed */
 }
 
 .custom-input::placeholder {
@@ -76,9 +79,6 @@
   overflow: hidden;
   z-index: 1;
   backdrop-filter: blur(300px);
-
-
-
 }
 
 
@@ -97,10 +97,12 @@
   filter: blur(200px);
 
 }
-.pink-shadow-footer{
+
+.pink-shadow-footer {
   margin-left: 9px;
 
 }
+
 .custom-rectangle {
   width: auto;
   height: auto;
@@ -791,6 +793,8 @@
   font-weight: 700;
   font-family: inherit;
   z-index: 2;
+  margin-top: 28px;
+
 }
 
 .social-icons1:hover {
@@ -2451,6 +2455,7 @@
     gap: var(--gap-21xl);
   }
 
+  /* 
   .unleash-your-brands {
     font-size: var(--font-size-15xl);
     line-height: 50px;
@@ -2459,6 +2464,71 @@
   .a-message-away-container {
     font-size: var(--font-size-21xl);
     line-height: 72px;
+  } */
+  .divider-line {
+    /* Mobile-specific styles */
+    text-align: center;
+  }
+
+  .unleash-your-brands {
+    /* Mobile-specific styles */
+    font-size: 2.5em;
+  }
+
+  .digital-realities {
+    /* Mobile-specific styles */
+    font-size: 1.5em;
+    /* Adjust the size as needed */
+  }
+
+  .explore-link {
+    /* Mobile-specific styles */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .wrapper-about-us-links,
+  .wrapper-social-media-icons-gro {
+    margin-bottom: 10px;
+  }
+
+  .a-message {
+    font-size: 2.1rem;
+  }
+
+  .together-well-craft {
+    font-size: 0.5rem;
+  }
+
+  .button-container {
+    width: 380px;
+    height: 95px;
+    border-radius: 44px;
+  }
+
+
+.magic-button {
+  padding: 15px 40px; 
+  font-size: 24px; 
+  height: auto; 
+  width: 72%;
+  border-radius: 55px !important; 
+}
+  .magic-button::before {
+    border-radius: 44px;
+    /* Adjust border-radius as needed */
+  }
+
+  .button-container:hover .magic-button::before {
+    transform: scale(1, 1);
+    /* Remove the scaling on hover for mobile */
+  }
+
+  .top-hat {}
+
+  .input-container {
+    margin-top: 36px;
   }
 
   .div {
@@ -2484,6 +2554,8 @@
   .lets-create-special {
     font-size: var(--font-size-23xl);
     line-height: 50px;
+    margin-top: 73px;
+
   }
 
   .your-name {
@@ -2545,10 +2617,10 @@
     min-width: 100%;
   }
 
-  .select-your-project1 {
+  /* .select-your-project1 {
     font-size: var(--font-size-7xl);
     line-height: 38px;
-  }
+  } */
 
   .frame-parent {
     flex-wrap: wrap;
@@ -2702,7 +2774,7 @@
 
   .lets-create-magic,
   .together-well-craft {
-    font-size: var(--font-size-3xl);
+    font-size: 21px;
   }
 
   .div {
@@ -2903,15 +2975,16 @@
     font-size: 56px;
   }
 }
+
 @media only screen and (max-width: 767px) {
+
   .custom-svg-container,
   .facebook-container,
-  .bento-container ,
+  .bento-container,
   .instagram-svg,
- .linked-in-svg
-  {
-    width: 23px; 
-    height: 23px; 
+  .linked-in-svg {
+    width: 23px;
+    height: 23px;
     margin-top: 45px;
   }
 
@@ -2919,8 +2992,46 @@
   .facebook-container svg,
   .bento-container svg,
   .instagram-svg svg,
-  .linked-in-svg svg{
+  .linked-in-svg svg {
     width: 100%;
     height: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .e145_4457 {
+    background-color: rgba(17.395519763231277, 17.395519763231277, 17.395519763231277, 0.4000000059604645);
+    width: 500px;
+    height: 1253px;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+
+  .select-your-project {
+    /* font-size: var(--font-size-lgi); */
+    font-size: 22px;
+}
+  .marasinh-contact-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .custom-input {
+    background-color: rgba(255, 255, 255, 0.05000000074505806);
+    width: 440px;
+    height: 87px;
+    border-radius: 30px;
+
+  }
+
+  .group-button {
+    padding: 8px;
+    min-width: 80px;
   }
 }

@@ -1,3 +1,4 @@
+import Footer from "./Footer";
 import "./FrameHeader.css";
 
 const FrameHeader = () => {
@@ -51,6 +52,7 @@ const FrameHeader = () => {
             <div className="frame-child28" />
             <div className="lets-talk7">Let’s Talk</div>
           </button>
+
         </div>
       </header>
       <section className="text-email-address">
@@ -88,16 +90,23 @@ const FrameHeader = () => {
             project.
           </div>
         </div>
-        <div className="rectangle-parent20">
+        <div className="">
           <div className="frame-child29" />
-          <button className="group-user-experience">
+          {/* <button className="group-user-experience">
             <div className="lets-create-special1">Let’s create special</div>
             <img
               className="emoji-shooting-star"
               alt=""
               src="/-emoji-shooting-star@2x.png"
             />
-          </button>
+          </button> */}
+          <div className="button-container-about">
+            <a href="#" className="magic-button-about">Let's Create Special <img
+              className="emoji-waving-hand1"
+              alt=""
+              src="/-emoji-shooting-star@2x.png"
+            /></a>
+          </div>
         </div>
       </section>
       <img className="frame-header-child" alt="" />
@@ -448,15 +457,22 @@ const FrameHeader = () => {
                   Let’s impressed with your product!
                 </h3>
               </div>
-              <div className="create-your-frame">
-                <div className="lets-create-yours">Let’s create your’s</div>
-                <h3 className="h3">💭</h3>
-              </div>
+              {/* <button class="create-your-frame">
+                <div class="lets-create-yours">Let’s create yours</div>
+                <h3 class="h3">💭</h3>
+              </button> */}
+              <button className="group-user-experience">
+                <div className="lets-create-special1">Let’s create special</div>
+                <h3 class="h3">💭</h3>
+
+               
+              </button>
             </div>
           </div>
         </div>
       </section>
-      <section className="master-frame">
+      <Footer />
+      {/* <section className="master-frame">
         <div className="elevate-frame" />
         <div className="line-element" />
         <div className="frame-wrapper">
@@ -569,7 +585,7 @@ const FrameHeader = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 };
