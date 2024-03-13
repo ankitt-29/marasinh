@@ -477,7 +477,7 @@ const HeaderFrame = () => {
 
         <div className="fixed-container">
           <Test />
-          <div className='circle-button-service'>
+          {/* <div className='circle-button-service'>
             <button className="circle-button-ser" onClick={handlePrev}>
               <i class="fa-solid fa-arrow-right arrow-top-left"></i>
 
@@ -486,7 +486,7 @@ const HeaderFrame = () => {
               <i class="fa-solid fa-arrow-right arrow-top"></i>
 
             </button>
-          </div>
+          </div> */}
         </div>
 
         <section className="project-card">

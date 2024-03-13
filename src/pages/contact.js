@@ -192,7 +192,7 @@ const Contact = () => {
                 alt=""
                 src="/layer-1.svg"
               />
-              <div className="inner-frames">
+              <div className=" ">
                 <div className="content-frame">
                   <div className="link-frame">
                     <div className="text-container">
@@ -297,7 +297,7 @@ const Contact = () => {
                     <div className="content-area1" />
                     <div className="content-area1" />
 
-                    <div className="emoji-dizzy-frame">
+                    <div className="">
                       <div className="project-type-selector">
                         <div className="branding-social-media-other">
                           <div className="mobile-app-website-group">
@@ -305,231 +305,223 @@ const Contact = () => {
                             <div className="select-your-project">Select your project type:</div>
                           </div>
                         </div>
-                        <div className="work-aboutus-blogs-contactus">
-                          {/* Checkbox for project type */}
-                          <label
-                            className={`group-button ${formData.projectType.includes('Mobile app') ? 'checked' : ''}`}
-                            style={{
-                              flexShrink: 0,
-                              borderRadius: '100px',
-                              border: '1px solid #7C6493',
-                              background: formData.projectType.includes('Mobile app') ? '#5A61FF' : 'rgba(255, 255, 255, 0.05)',
-                              display: 'flex',
-                              alignItems: 'center',
-                              justifyContent: 'center',
-                              cursor: 'pointer',
-                            }}
-                          >
-                            <input
-                              type="checkbox"
-                              className="hidden-checkbox"
-                              checked={formData.projectType.includes('Mobile app')}
-                              onChange={() => handleCheckboxChangeService('Mobile app')}
-                              style={{ display: 'none' }}
-                            />
-                            <span className="checkbox-text">Mobile app</span>
-                          </label>
 
-                          {/* Repeat similar structure for other project types */}
-                          <label
-                            className={`group-button ${formData.projectType.includes('Website') ? 'checked' : ''}`}
-                            style={{
-                              flexShrink: 0,
-                              borderRadius: '100px',
-                              border: '1px solid #7C6493',
-                              background: formData.projectType.includes('Website') ? '#5A61FF' : 'rgba(255, 255, 255, 0.05)',
-                              display: 'flex',
-                              alignItems: 'center',
-                              justifyContent: 'center',
-                              cursor: 'pointer',
-                            }}
-                          >
-                            <input
-                              type="checkbox"
-                              className="hidden-checkbox"
-                              checked={formData.projectType.includes('Website')}
-                              onChange={() => handleCheckboxChangeService('Website')}
-                              style={{ display: 'none' }}
-                            />
-                            <span className="checkbox-text">Website</span>
-                          </label>
-
-                          {/* Repeat similar structure for other project types */}
-                          <label
-                            className={`rectangle-parent4 ${formData.projectType.includes('Branding') ? 'checked' : ''}`}
-                            style={{
-                              flexShrink: 0,
-                              borderRadius: '100px',
-                              border: '1px solid #7C6493',
-                              background: formData.projectType.includes('Branding') ? '#5A61FF' : 'rgba(255, 255, 255, 0.05)',
-                              display: 'flex',
-                              alignItems: 'center',
-                              justifyContent: 'center',
-                              cursor: 'pointer',
-                            }}
-                          >
-                            <input
-                              type="checkbox"
-                              className="hidden-checkbox"
-                              checked={formData.projectType.includes('Branding')}
-                              onChange={() => handleCheckboxChangeService('Branding')}
-                              style={{ display: 'none' }}
-                            />
-                            <span className="checkbox-text">Branding</span>
-                          </label>
-
-                          {/* Repeat similar structure for other project types */}
-                          <label
-                            className={`rectangle-parent4 ${formData.projectType.includes('Social media') ? 'checked' : ''}`}
-                            style={{
-                              flexShrink: 0,
-                              borderRadius: '100px',
-                              border: '1px solid #7C6493',
-                              background: formData.projectType.includes('Social media') ? '#5A61FF' : 'rgba(255, 255, 255, 0.05)',
-                              display: 'flex',
-                              alignItems: 'center',
-                              justifyContent: 'center',
-                              cursor: 'pointer',
-                            }}
-                          >
-                            <input
-                              type="checkbox"
-                              className="hidden-checkbox"
-                              checked={formData.projectType.includes('Social media')}
-                              onChange={() => handleCheckboxChangeService('Social media')}
-                              style={{ display: 'none' }}
-                            />
-                            <span className="checkbox-text">Social media</span>
-                          </label>
-
-                          {/* Repeat similar structure for other project types */}
-                          <label
-                            className={`rectangle-parent4 ${formData.projectType.includes('Other') ? 'checked' : ''}`}
-                            style={{
-                              flexShrink: 0,
-                              borderRadius: '100px',
-                              border: '1px solid #7C6493',
-                              background: formData.projectType.includes('Other') ? '#5A61FF' : 'rgba(255, 255, 255, 0.05)',
-                              display: 'flex',
-                              alignItems: 'center',
-                              justifyContent: 'center',
-                              cursor: 'pointer',
-                            }}
-                          >
-                            <input
-                              type="checkbox"
-                              className="hidden-checkbox"
-                              checked={formData.projectType.includes('Other')}
-                              onChange={() => handleCheckboxChangeService('Other')}
-                              style={{ display: 'none' }}
-                            />
-                            <span className="checkbox-text">Other</span>
-                          </label>
-                        </div>
-                      </div>
-                      
-                    </div>
-                   
-                    <div className="marasihstudiogmailcom">
-                      
-                      <div className="followus">
-                        {/* Checkbox for project budget */}
-                        <label
-                          className={`group-button ${formData.projectBudget === 'Less than $5K' ? 'checked' : ''}`}
-                          style={{
-                            display: 'flex',
-                            flexShrink: 0,
-                            borderRadius: '100px',
-                            border: '1px solid #7C6493',
-                            background: formData.projectBudget === 'Less than $5K' ? '#5A61FF' : 'rgba(255, 255, 255, 0.05)',
-                            alignItems: 'center',
-                            justifyContent: 'center',
-                            cursor: 'pointer',
-                          }}
-                        >
-                          <input
-                            type="checkbox"
-                            className="hidden-checkbox"
-                            checked={formData.projectBudget === 'Less than $5K'}
-                            onChange={() => handleCheckboxChange('Less than $5K')}
-                            style={{ display: 'none' }}
-                          />
-                          <span className="checkbox-text">Less than $5K</span>
-                        </label>
-
-                        {/* Repeat similar structure for other budget options */}
-                        <label
-                          className={`group-button ${formData.projectBudget === '$5K to $10K' ? 'checked' : ''}`}
-                          style={{
-                            display: 'flex',
-                            flexShrink: 0,
-                            borderRadius: '100px',
-                            border: '1px solid #7C6493',
-                            background: formData.projectBudget === '$5K to $10K' ? '#5A61FF' : 'rgba(255, 255, 255, 0.05)',
-                            alignItems: 'center',
-                            justifyContent: 'center',
-                            cursor: 'pointer',
-                          }}
-                        >
-                          <input
-                            type="checkbox"
-                            className="hidden-checkbox"
-                            checked={formData.projectBudget === '$5K to $10K'}
-                            onChange={() => handleCheckboxChange('$5K to $10K')}
-                            style={{ display: 'none' }}
-                          />
-                          <span className="checkbox-text">$5K to $10K</span>
-                        </label>
-
-                        {/* Repeat similar structure for other budget options */}
-                        <label
-                          className={`rectangle-parent4 ${formData.projectBudget === '$10K to $25K' ? 'checked' : ''}`}
-                          style={{
-                            display: 'flex',
-                            width: '306px',
-                            justifyContent: 'center',
-                            alignItems: 'center',
-                            gap: '10px',
-                            borderRadius: '100px',
-                            border: '1px solid #7C6493',
-                            background: formData.projectBudget === '$10K to $25K' ? '#5A61FF' : 'rgba(255, 255, 255, 0.05)',
-                          }}
-                        >
-                          <input
-                            type="checkbox"
-                            className="hidden-checkbox"
-                            checked={formData.projectBudget === '$10K to $25K'}
-                            onChange={() => handleCheckboxChange('$10K to $25K')}
-                            style={{ display: 'none' }}
-                          />
-                          <span className="checkbox-text">$10K to $25K</span>
-                        </label>
-
-                        {/* Repeat similar structure for other budget options */}
-                        <label
-                          className={`rectangle-parent4 ${formData.projectBudget === '$25K to $45K' ? 'checked' : ''}`}
-                          style={{
-                            display: 'flex',
-                            width: '306px',
-                            justifyContent: 'center',
-                            alignItems: 'center',
-                            gap: '10px',
-                            borderRadius: '100px',
-                            border: '1px solid #7C6493',
-                            background: formData.projectBudget === '$25K to $45K' ? '#5A61FF' : 'rgba(255, 255, 255, 0.05)',
-                          }}
-                        >
-                          <input
-                            type="checkbox"
-                            className="hidden-checkbox"
-                            checked={formData.projectBudget === '$25K to $45K'}
-                            onChange={() => handleCheckboxChange('$25K to $45K')}
-                            style={{ display: 'none' }}
-                          />
-                          <span className="checkbox-text">$25K to $45K</span>
-                        </label>
                       </div>
                     </div>
+
+                    <div className="work-aboutus-blogs-contactus">
+                      <label
+                        className={`rectangle-parent4 ${formData.projectType.includes('Mobile app') ? 'checked' : ''}`}
+                        style={{
+                          flexShrink: 0,
+                          borderRadius: '100px',
+                          border: '1px solid #7C6493',
+                          background: formData.projectType.includes('Mobile app') ? '#5A61FF' : 'rgba(255, 255, 255, 0.05)',
+                          display: 'flex',
+                          alignItems: 'center',
+                          justifyContent: 'center',
+                          cursor: 'pointer',
+                        }}
+                      >
+                        <input
+                          type="checkbox"
+                          className="hidden-checkbox"
+                          checked={formData.projectType.includes('Mobile app')}
+                          onChange={() => handleCheckboxChangeService('Mobile app')}
+                          style={{ display: 'none' }}
+                        />
+                        <span className="checkbox-text">Mobile app</span>
+                      </label>
+
+                      <label
+                        className={`rectangle-parent4 ${formData.projectType.includes('Website') ? 'checked' : ''}`}
+                        style={{
+                          flexShrink: 0,
+                          borderRadius: '100px',
+                          border: '1px solid #7C6493',
+                          background: formData.projectType.includes('Website') ? '#5A61FF' : 'rgba(255, 255, 255, 0.05)',
+                          display: 'flex',
+                          alignItems: 'center',
+                          justifyContent: 'center',
+                          cursor: 'pointer',
+                        }}
+                      >
+                        <input
+                          type="checkbox"
+                          className="hidden-checkbox"
+                          checked={formData.projectType.includes('Website')}
+                          onChange={() => handleCheckboxChangeService('Website')}
+                          style={{ display: 'none' }}
+                        />
+                        <span className="checkbox-text">Website</span>
+                      </label>
+
+                      <label
+                        className={`rectangle-parent4 ${formData.projectType.includes('Branding') ? 'checked' : ''}`}
+                        style={{
+                          flexShrink: 0,
+                          borderRadius: '100px',
+                          border: '1px solid #7C6493',
+                          background: formData.projectType.includes('Branding') ? '#5A61FF' : 'rgba(255, 255, 255, 0.05)',
+                          display: 'flex',
+                          alignItems: 'center',
+                          justifyContent: 'center',
+                          cursor: 'pointer',
+                        }}
+                      >
+                        <input
+                          type="checkbox"
+                          className="hidden-checkbox"
+                          checked={formData.projectType.includes('Branding')}
+                          onChange={() => handleCheckboxChangeService('Branding')}
+                          style={{ display: 'none' }}
+                        />
+                        <span className="checkbox-text">Branding</span>
+                      </label>
+
+                      <label
+                        className={`rectangle-parent4 ${formData.projectType.includes('Social media') ? 'checked' : ''}`}
+                        style={{
+                          flexShrink: 0,
+                          borderRadius: '100px',
+                          border: '1px solid #7C6493',
+                          background: formData.projectType.includes('Social media') ? '#5A61FF' : 'rgba(255, 255, 255, 0.05)',
+                          display: 'flex',
+                          alignItems: 'center',
+                          justifyContent: 'center',
+                          cursor: 'pointer',
+                        }}
+                      >
+                        <input
+                          type="checkbox"
+                          className="hidden-checkbox"
+                          checked={formData.projectType.includes('Social media')}
+                          onChange={() => handleCheckboxChangeService('Social media')}
+                          style={{ display: 'none' }}
+                        />
+                        <span className="checkbox-text">Social media</span>
+                      </label>
+
+                      <label
+                        className={`rectangle-parent4 ${formData.projectType.includes('Other') ? 'checked' : ''}`}
+                        style={{
+                          flexShrink: 0,
+                          borderRadius: '100px',
+                          border: '1px solid #7C6493',
+                          background: formData.projectType.includes('Other') ? '#5A61FF' : 'rgba(255, 255, 255, 0.05)',
+                          display: 'flex',
+                          alignItems: 'center',
+                          justifyContent: 'center',
+                          cursor: 'pointer',
+                        }}
+                      >
+                        <input
+                          type="checkbox"
+                          className="hidden-checkbox"
+                          checked={formData.projectType.includes('Other')}
+                          onChange={() => handleCheckboxChangeService('Other')}
+                          style={{ display: 'none' }}
+                        />
+                        <span className="checkbox-text">Other</span>
+                      </label>
+
+
+                    </div>
+
+                    <div className="another-div-child">
+                      <label
+                        className={`group-button child ${formData.projectBudget === 'Less than $5K' ? 'checked' : ''}`}
+                        style={{
+                          // display: 'flex',
+                          flexShrink: 0,
+                          borderRadius: '100px',
+                          border: '1px solid #7C6493',
+                          background: formData.projectBudget === 'Less than $5K' ? '#5A61FF' : 'rgba(255, 255, 255, 0.05)',
+                          alignItems: 'center',
+                          justifyContent: 'center',
+                          cursor: 'pointer',
+                        }}
+                      >
+                        <input
+                          type="checkbox"
+                          className="hidden-checkbox"
+                          checked={formData.projectBudget === 'Less than $5K'}
+                          onChange={() => handleCheckboxChange('Less than $5K')}
+                          style={{ display: 'none' }}
+                        />
+                        <span className="checkbox-text">Less than $5K</span>
+                      </label>
+
+                      <label
+                        className={`group-button child${formData.projectBudget === '$5K to $10K' ? 'checked' : ''}`}
+                        style={{
+                          display: 'flex',
+                          flexShrink: 0,
+                          borderRadius: '100px',
+                          border: '1px solid #7C6493',
+                          background: formData.projectBudget === '$5K to $10K' ? '#5A61FF' : 'rgba(255, 255, 255, 0.05)',
+                          alignItems: 'center',
+                          justifyContent: 'center',
+                          cursor: 'pointer',
+                        }}
+                      >
+                        <input
+                          type="checkbox"
+                          className="hidden-checkbox"
+                          checked={formData.projectBudget === '$5K to $10K'}
+                          onChange={() => handleCheckboxChange('$5K to $10K')}
+                          style={{ display: 'none' }}
+                        />
+                        <span className="checkbox-text">$5K to $10K</span>
+                      </label>
+
+                      <label
+                        className={`group-button child ${formData.projectBudget === '$10K to $25K' ? 'checked' : ''}`}
+                        style={{
+                          display: 'flex',
+                          // width: '306px',
+                          justifyContent: 'center',
+                          alignItems: 'center',
+                          gap: '10px',
+                          borderRadius: '100px',
+                          border: '1px solid #7C6493',
+                          background: formData.projectBudget === '$10K to $25K' ? '#5A61FF' : 'rgba(255, 255, 255, 0.05)',
+                        }}
+                      >
+                        <input
+                          type="checkbox"
+                          className="hidden-checkbox"
+                          checked={formData.projectBudget === '$10K to $25K'}
+                          onChange={() => handleCheckboxChange('$10K to $25K')}
+                          style={{ display: 'none' }}
+                        />
+                        <span className="checkbox-text">$10K to $25K</span>
+                      </label>
+
+                      <label
+                        className={`group-button child ${formData.projectBudget === '$25K to $45K' ? 'checked' : ''}`}
+                        style={{
+                          display: 'flex',
+                          // width: '306px',
+                          justifyContent: 'center',
+                          alignItems: 'center',
+                          gap: '10px',
+                          borderRadius: '100px',
+                          border: '1px solid #7C6493',
+                          background: formData.projectBudget === '$25K to $45K' ? '#5A61FF' : 'rgba(255, 255, 255, 0.05)',
+                        }}
+                      >
+                        <input
+                          type="checkbox"
+                          className="hidden-checkbox"
+                          checked={formData.projectBudget === '$25K to $45K'}
+                          onChange={() => handleCheckboxChange('$25K to $45K')}
+                          style={{ display: 'none' }}
+                        />
+                        <span className="checkbox-text">$25K to $45K</span>
+                      </label>
+                    </div>
+
 
                     <div className="b-e-s-i-m-p-l-e-b-e-c-r-e-a-t1">
                       <div className="">
@@ -825,6 +817,7 @@ const Contact = () => {
           </div >
         </div>
       </div>
+
     </div>
   );
 };

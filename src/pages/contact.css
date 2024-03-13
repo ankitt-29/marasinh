@@ -1,11 +1,16 @@
 .marasinh-contact-page {
   zoom: 67%;
-
-
 }
 
 
 /* ---------------   rectangle          --------------------- */
+.another-div-child {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 15px;
+}
 
 .pink-round {
   border-radius: 500px;
@@ -1207,6 +1212,7 @@
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
+  flex-direction: row;
 }
 
 .work-aboutus-blogs-contactus {
@@ -1531,8 +1537,7 @@
 .followus {
   width: 1290px;
   flex-wrap: wrap;
-  align-items: flex-end;
-  justify-content: center;
+
   gap: var(--gap-3xl);
 }
 
@@ -2472,7 +2477,6 @@
 
   .unleash-your-brands {
     /* Mobile-specific styles */
-    font-size: 2.5em;
   }
 
   .digital-realities {
@@ -2508,13 +2512,14 @@
   }
 
 
-.magic-button {
-  padding: 15px 40px; 
-  font-size: 24px; 
-  height: auto; 
-  width: 72%;
-  border-radius: 55px !important; 
-}
+  .magic-button {
+    padding: 15px 40px;
+    font-size: 24px;
+    height: auto;
+    width: 72%;
+    border-radius: 55px !important;
+  }
+
   .magic-button::before {
     border-radius: 44px;
     /* Adjust border-radius as needed */
@@ -2609,7 +2614,7 @@
   }
 
   .work-aboutus-blogs-contactus {
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
   }
 
   .project-type-selector {
@@ -2687,9 +2692,7 @@
     box-sizing: border-box;
   }
 
-  .linked-in-icon-parent {
-    gap: var(--gap-8xl);
-  }
+
 
   .be-simple-be-container {
     font-size: var(--font-size-29xl);
@@ -2759,7 +2762,7 @@
   }
 
   .unleash-your-brands {
-    font-size: var(--font-size-6xl);
+    font-size: 18px;
     line-height: 38px;
   }
 
@@ -2998,24 +3001,37 @@
   }
 }
 
+/* 
 @media screen and (max-width: 600px) {
   .e145_4457 {
     background-color: rgba(17.395519763231277, 17.395519763231277, 17.395519763231277, 0.4000000059604645);
-    width: 500px;
+    width: 456px;
     height: 1253px;
     border-top-left-radius: 24px;
     border-top-right-radius: 24px;
     border-bottom-left-radius: 24px;
     border-bottom-right-radius: 24px;
+    text-align: center;
+    justify-self: center;
+    align-items: center;
+    margin-left: 20px;
+    display: flex;
   }
-}
+
+} */
 
 @media screen and (max-width: 600px) {
 
   .select-your-project {
     /* font-size: var(--font-size-lgi); */
+    margin-left: -12px;
     font-size: 22px;
-}
+  }
+
+  .branding-social-media-other {
+    margin-left: -50px;
+  }
+
   .marasinh-contact-page {
     display: flex;
     justify-content: center;
@@ -3030,8 +3046,220 @@
 
   }
 
-  .group-button {
+  /* .group-button {
     padding: 8px;
     min-width: 80px;
+  } */
+
+  .twitter-icon-another {
+
+    left: 20px;
   }
+
+  .work-aboutus-blogs-contactus label {
+    /* width: 100%; */
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .rectangle-parent4 {
+    /* width: 135px; */
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .marasinh-contact-page {
+    zoom: 0%;
+  }
+
+  .a-message {
+    font-size: 1.5rem;
+
+  }
+
+  .layer-1-icon {
+    height: 30px;
+    width: 110px;
+  }
+
+  .inner-frames {
+    display: none;
+  }
+
+  .lets-create-magic,
+  .together-well-craft {
+    font-size: 15px;
+  }
+
+  .magic-button {
+    padding: 15px 40px;
+    font-size: 16px;
+    height: 33px;
+    width: 63%;
+    border-radius: 55px !important;
+  }
+
+  .button-container {
+    width: 308px;
+    height: 81px;
+    border-radius: 44px;
+  }
+
+  .linked-in-icon-parent {
+    gap: var(--gap-8xl);
+    align-items: center;
+
+  }
+
+  .lets-create-special {
+    margin-left: -25px;
+    font-size: 23px;
+    /* margin-top: -14px; */
+    top: 8px;
+    line-height: 38px;
+  }
+
+  .e145_4457 {
+    background-color: rgba(17.395519763231277, 17.395519763231277, 17.395519763231277, 0.4000000059604645);
+    width: 340px;
+    height: auto;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+    text-align: center;
+    justify-self: center;
+    align-items: center;
+    display: flex;
+  }
+
+  .custom-input {
+    background-color: rgba(255, 255, 255, 0.05000000074505806);
+    width: 285px;
+    height: 67px;
+    border-radius: 19px;
+  }
+
+  /* .work-aboutus-blogs-contactus {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+  } */
+  .work-aboutus-blogs-contactus {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .another-div-child {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  /* .rectangle-parent4 {
+    width: calc(63% - 10px);
+    height: 83px;
+    margin-left: -36px;
+    margin-right: -39px;
+    margin-bottom: 10px;
+  } */
+  /* .another-div-child {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  } */
+
+  .rectangle-parent4 {
+    width: calc(64% - 10px);
+    height: 56px;
+    margin: 0 -34px 8px -32px;
+  }
+
+  .another-div-child  .child {
+    width: calc(100% - 10px);
+    /* Full width minus margin */
+    height: 56px;
+    margin: 0 5px 8px 5px;
+    /* Adjust the margin as needed */
+    box-sizing: border-box;
+    cursor: pointer;
+    border: 1px solid #7C6493;
+    background: rgba(255, 255, 255, 0.05);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+  }
+
+
+  /* .group-button {
+    width: calc(64% - 10px);
+    height: 56px;
+    margin: 0 -34px 8px -32px;
+  } */
+
+  /* .group-button {
+    width: calc(50% - 10px);
+    margin-bottom: 10px;
+    height: 56px;
+    margin: 0 -34px 8px -32px;
+
+  } */
+
+  .marasihstudiogmailcom {
+    padding: 0 var(--padding-3xl);
+  }
+
+  /* .followus {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px; 
+    justify-content: space-between;
+  }
+
+  .group-button {
+    width: 48%;
+    margin-right: 4%;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+  } */
+
+  .custom-input::placeholder {
+    font-size: 18px;
+    margin-top: -7px;
+  }
+
+  .mobile-app-website-group {
+    align-items: center;
+    gap: var(--gap-xl);
+    margin-top: -32px;
+  }
+
+  .select-your-project {
+    margin-left: -12px;
+    font-size: 12px;
+  }
+
+  .checkbox-text {
+    font-size: 15px;
+    line-height: 39px;
+  }
+
+  .mobile-app-website-group-child {
+    height: 17px;
+    width: 17px;
+
+  }
+
+  /* .followus {
+    width: calc(64%);
+
+  } */
+
 }

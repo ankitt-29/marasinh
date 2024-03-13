@@ -4,13 +4,11 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { FaArrowRight } from 'react-icons/fa'; // Import FaArrowRight icon from react-icons/fa
 
-
 const Test = () => {
-    // Create refs for the sliders
     const slider1 = useRef(null);
     const slider2 = useRef(null);
 
-    const handleSliderPrevNext = (direction) => {
+    const handleSliderPrevNext = () => {
         slider1.current.slickPrev();
         slider2.current.slickPrev();
     };
@@ -19,7 +17,6 @@ const Test = () => {
         slidesToShow: 1,
         fade: true,
         arrows: false, // Set arrows to false to hide navigation buttons
-
     };
 
     return (
@@ -40,28 +37,15 @@ const Test = () => {
                     </Slider>
                 </div>
             </div>
-            {/* <div className="">
-                <button onClick={() => handleSliderPrevNext()}>Previous</button>
-                <button onClick={() => handleSliderPrevNext()}>Next</button>
-            </div> */}
-            {/* <div className='circle-button-service'>
-            <button className="circle-button-ser" onClick={() => handleSliderPrevNext()}>
-              <i class="fa-solid fa-arrow-right arrow-top-left"></i>
-
-            </button>
-            <button className="circle-button2-ser" onClick={() => handleSliderPrevNext()}>
-              <i class="fa-solid fa-arrow-right arrow-top"></i>
-
-            </button>
-          </div> */}
+            {/* Use your custom arrow buttons with the same functionality */}
             <div className='circle-button-service'>
-        <button className="circle-button-ser" onClick={() => handleSliderPrevNext()}>
-          <FaArrowRight className="arrow-top-left" />
-        </button>
-        <button className="circle-button2-ser" onClick={() => handleSliderPrevNext()}>
-          <FaArrowRight className="arrow-top" />
-        </button>
-      </div>
+                <button className="circle-button-ser" onClick={() => handleSliderPrevNext()}>
+                    <FaArrowRight className="arrow-top-left-ser" strokeWidth={1}/>
+                </button>
+                <button className="circle-button2-ser" onClick={() => handleSliderPrevNext()}>
+                    <FaArrowRight className="arrow-top-ser" />
+                </button>
+            </div>
         </div>
     );
 };
