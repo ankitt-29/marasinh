@@ -19,21 +19,29 @@ const Test = () => {
         arrows: false, // Set arrows to false to hide navigation buttons
     };
 
+    // Determine the image paths based on screen size
+    const servicesImage = window.innerWidth < 768 ? "/green-left.png" : "/green-left.png";
+    const secondLeftImage = window.innerWidth < 768 ? "/orange-left.png" : "/orange-left.png";
+    const thirdLeftImage = window.innerWidth < 768 ? "/purple-left.png" : "/purple-left.png";
+    const groupImage = window.innerWidth < 768 ? "/Group 34379.png" : "/Group 34379.png";
+    const secondRightImage = window.innerWidth < 768 ? "/third-right-ser.png" : "/third-right-ser.png";
+    const thirdRightImage = window.innerWidth < 768 ? "/second-right-ser.png" : "/second-right-ser.png";
+
     return (
         <div>
             <div className="slider-container">
                 <div className="slider">
                     <Slider ref={slider1} {...sliderSettings}>
-                        <div className="slide"><img src="/services1.png" alt="/services1.png" /></div>
-                        <div className="slide"><img src="/second-left-ser.png" alt="" /></div>
-                        <div className="slide"><img src="/third-left-ser.png" alt="/services1.png" /></div>
+                        <div className="slide"><img src={servicesImage} alt="Services Image" /></div>
+                        <div className="slide"><img src={secondLeftImage} alt="Second Left Image" /></div>
+                        <div className="slide"><img src={thirdLeftImage} alt="Third Left Image" /></div>
                     </Slider>
                 </div>
                 <div className="slider">
                     <Slider ref={slider2} {...sliderSettings}>
-                        <div className="slide"><img src="/Group 34379.png" alt="" /></div>
-                        <div className="slide"><img src="/second-right-ser.png" alt="/services1.png" /></div>
-                        <div className="slide"><img src="/third-right-ser.png" alt="" /></div>
+                        <div className="slide"><img src={groupImage} alt="Group Image" /></div>
+                        <div className="slide"><img src={secondRightImage} alt="Second Right Image" /></div>
+                        <div className="slide"><img src={thirdRightImage} alt="Third Right Image" /></div>
                     </Slider>
                 </div>
             </div>

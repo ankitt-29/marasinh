@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mobile Responsive Cards</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<style>
+  .outer-box {
+    width: 100%;
+    max-width: 600px; /* Adjust max-width as needed */
+    margin: 20px auto;
+    padding: 20px;
+    border: 2px solid #5a61ff;
+    border-radius: 20px;
+    background: linear-gradient(to bottom, rgba(90, 97, 255, 0.1), rgba(0, 0, 0, 0.1));
+    box-sizing: border-box;
+  }
+
+  .crafted-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .crafted-box {
+    width: 100%;
+    max-width: 500px; /* Adjust max-width as needed */
+    height: auto;
+    border: 2px solid rgba(118, 101, 239, 1);
+    border-radius: 16px;
+    background-color: rgba(9, 9, 9, 0.11);
+    margin-bottom: 20px;
+  }
+
+  .inner-img {
+    width: 100%;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+  }
+
+  .crafted-inner {
+    padding: 20px;
+  }
+
+  .services-desc {
+    text-align: center;
+  }
+
+  .crafted-card-big-text {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  .crafted-card-small-text {
+    font-size: 16px;
+  }
+
+  .outlined-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  @media screen and (max-width: 600px) {
+    .crafted-box {
+      margin-right: 0;
+    }
+  }
+</style>
+</head>
+<body>
+<div class="outer-box">
+  <div>
+    <div class="crafted-container">
+      <!-- Your card elements here -->
+      <!-- Card 1 -->
+      <div class="crafted-box">
+        <img class="inner-img" src="/Mask group 1.png" alt="Card 1">
+        <div class="crafted-inner">
+          <div class="services-desc">
+            <div class="crafted-card-big-text">Socialline</div>
+            <div class="crafted-card-small-text">UX research & UI design</div>
+          </div>
+        </div>
+        <div class="outlined-circle">
+          <i class="fa-solid fa-arrow-right arrow-icon-1"></i>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="crafted-box">
+        <img class="inner-img" src="/Mask group 2.png" alt="Card 2">
+        <div class="crafted-inner">
+          <div class="services-desc">
+            <div class="crafted-card-big-text">Dor - Dating app</div>
+            <div class="crafted-card-small-text">UX research and UI design</div>
+          </div>
+        </div>
+        <div class="outlined-circle">
+          <i class="fa-solid fa-arrow-right arrow-icon-1"></i>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="crafted-box">
+        <img class="inner-img" src="/Mask group 3.png" alt="Card 3">
+        <div class="crafted-inner">
+          <div class="services-desc">
+            <div class="crafted-card-big-text">Panache</div>
+            <div class="crafted-card-small-text">Logo & Brand identity</div>
+          </div>
+        </div>
+        <div class="outlined-circle">
+          <i class="fa-solid fa-arrow-right arrow-icon-1"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

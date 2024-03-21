@@ -1,7 +1,15 @@
 import Footer from "./Footer";
+import { useNavigate } from "react-router-dom";
+
 import "./MainFrame.css";
 
 const MainFrame = () => {
+  const navigate = useNavigate();
+
+  const handleNavigation = (route) => {
+    navigate(route);
+  };
+
   return (
     <div className="main-frame">
       <div className="we-are-marasih1">We are marasih studio</div>
@@ -24,12 +32,24 @@ const MainFrame = () => {
           <div className="work-frame">
             <div className="text-layer">
               <div className="ellipse-shape" />
-              <div className="work4">Work</div>
+              <div className="work4" onClick={() => handleNavigation("/work")}>
+                Work
+              </div>
             </div>
           </div>
-          <div className="about2">About</div>
-          <div className="contact-us4">Contact us</div>
-          <button className="letstalk-frame">
+          <div className="about2" onClick={() => handleNavigation("/about")}>
+            About
+          </div>
+          <div
+            className="contact-us4"
+            onClick={() => handleNavigation("/contact")}
+          >
+            Contact us
+          </div>
+          <button
+            className="letstalk-frame"
+            onClick={() => handleNavigation("/lets-talk")}
+          >
             <div className="letstalk-frame-child" />
             <div className="lets-talk5">Let’s Talk</div>
           </button>

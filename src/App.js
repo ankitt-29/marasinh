@@ -13,6 +13,8 @@ import SimpleSlider from "./SimpleSlider";
 import MainFrame from "./pages/MainFrame";
 import Test from "./pages/Test";
 
+
+
 function App() {
   const action = useNavigationType();
   const location = useLocation();

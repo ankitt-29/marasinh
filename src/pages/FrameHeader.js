@@ -1,7 +1,16 @@
 import Footer from "./Footer";
+import { useNavigate } from 'react-router-dom';
+
 import "./FrameHeader.css";
 
 const FrameHeader = () => {
+  const navigate = useNavigate();
+
+  const handleNavigation = (event, route) => {
+    event.preventDefault();
+    navigate(route);
+  };
+  
   return (
     <div className="frame-header">
       <div className="we-are-marasih2">We are marasih studio</div>
@@ -34,18 +43,23 @@ const FrameHeader = () => {
         <div className="inner-frames">
           <div className="content-frame">
             <div className="link-frame">
-              <div className="text-container">
-                <a href="/work" className="work">Work</a>
-              </div>
-              <div className="frame-footer">
-                <div className="group-links" />
-                <a href="/about" className="about3">About</a>
-              </div>
-              {/* <a href="#" className="about">About</a> */}
-              <div className="contact-info-frame">
-                <div className="" />
-                <a href="/contact" className="contact-us">Contact Us</a>
-              </div>
+            <div className="text-container">
+        <a href="/work" className="work" onClick={(e) => handleNavigation(e, '/work')}>
+          Work
+        </a>
+      </div>
+      <div className="frame-footer">
+        <div className="group-links" />
+        <a href="/about" className="about3" onClick={(e) => handleNavigation(e, '/about')}>
+          About
+        </a>
+      </div>
+      <div className="contact-info-frame">
+        <div className="" />
+        <a href="/contact" className="contact-us" onClick={(e) => handleNavigation(e, '/contact')}>
+          Contact Us
+        </a>
+      </div>
             </div>
           </div>
           <button className="rectangle-parent19">
