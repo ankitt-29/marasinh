@@ -1,5 +1,5 @@
-.main-frame{
-  zoom:67% !important
+.main-frame {
+  zoom: 67% !important;
 }
 
 .design-that-inspires1,
@@ -235,7 +235,7 @@
 .creative-mastery {
   background: linear-gradient(133.48deg, #8ca5ff, #84daff);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparen
+  -webkit-text-fill-color: transparen;
 }
 .crafting-designs-that-container {
   margin: 0;
@@ -286,7 +286,6 @@
   display: inline-block;
   max-width: 100%;
   font-family: var(--font-figma-hand);
-
 }
 .letssail-creativity-frame {
   width: 498px;
@@ -1345,10 +1344,10 @@
     font-size: var(--font-size-15xl);
     line-height: 50px;
   }
-  .crafting-designs-that-container {
+  /* .crafting-designs-that-container {
     font-size: var(--font-size-21xl);
     line-height: 72px;
-  }
+  } */
   .star-star-frame {
     gap: var(--gap-mid);
   }
@@ -1424,5 +1423,67 @@
   }
   .main-frame {
     gap: var(--gap-13xl);
+  }
+}
+@media screen and (max-width: 1200px) {
+  .main-frame {
+    zoom: 0% !important;
+  }
+
+  .crafted-with-care1 {
+    font-size: 18px;
+  }
+  .crafting-designs-that-container {
+    font-size: 25px;
+  }
+  .blend {
+    margin-top: -10px;
+  }
+  .letssail-creativity-frame {
+    margin-top: -70px;
+  }
+
+  .work-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: -103px;
+  }
+
+  .images-work {
+    width: 113%;
+  }
+  .socialine {
+    width: 99%;
+    border-radius: 22px;
+    margin-top: 10px;
+  }
+  .mult1 {
+    width: 99%;
+    border-radius: 22px;
+    margin-top: 24px;
+  }
+
+  .creativity-box {
+    background-image: linear-gradient(
+      0deg,
+      rgba(23.612350970506668, 23.612350970506668, 23.612350970506668, 1) 0%,
+      rgba(23.612350970506668, 23.612350970506668, 23.612350970506668, 0) 100%
+    );
+    width: 370px;
+    height: 375px;
+    border-radius: 25px;
+    margin-top: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .we-creativity{
+    width: 90%;
+    border-radius: 22px;
+    margin-top: -47px;
   }
 }

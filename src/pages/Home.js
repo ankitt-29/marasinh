@@ -9,7 +9,7 @@ import Test from "./Test";
 
 const HeaderFrame = () => {
   const sliderRef = useRef(null);
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 1200);
 
   const [selectedServices, setSelectedServices] = useState([]);
   const [selectedBudget, setSelectedBudget] = useState("");
@@ -389,16 +389,30 @@ const HeaderFrame = () => {
                 <img className="mini-figma" src="/group-34406@2x.png" alt="" />
                 <img src="/industry-leading.png" alt="" />
                 <button className="frame-elements">
-                    <div className="lets-create-a">Let’s create a thing</div>
-                    <img
-                      className="emoji-sparkles-icon"
-                      alt=""
-                      src="/-emoji-sparkles.svg"
-                    />
-                  </button>
+                  <div className="lets-create-a">Let’s create a thing</div>
+                  <img
+                    className="emoji-sparkles-icon"
+                    alt=""
+                    src="/-emoji-sparkles.svg"
+                  />
+                </button>
 
-                  <img className="unveiling" src="/unveiling.png" alt="" />
-                  <img className="unveiling" src="/projects.png" alt="" />
+                <img className="unveiling" src="/unveiling.png" alt="" />
+                <img className="unveiling" src="/projects.png" alt="" />
+                <img className="unveiling" src="/client.png" alt="" />
+                <img className="unveiling" src="/team.png" alt="" />
+                <img className="unveiling" src="/review.png" alt="" />
+                <img className="unveiling" src="/glimpse.png" alt="" />
+                <button className="lets-create-phenomenal-parent">
+                  <div className="lets-create-phenomenal">
+                    Let’s create phenomenal{" "}
+                    <img
+                      className="emoji-rainbow-icon"
+                      alt=""
+                      src="/-emoji-rainbow.svg"
+                    />
+                  </div>
+                </button>
               </div>
             </div>
           ) : (

@@ -1,11 +1,6 @@
 .frame-header {
-  zoom: 67% !important
+  zoom: 67% !important;
 }
-
-
-
-
-
 
 .button-container-about {
   position: relative;
@@ -19,7 +14,6 @@
   align-items: center;
   justify-content: center;
   background-color: var(--color-mediumslateblue-600);
-
 }
 
 .top-hat {
@@ -33,7 +27,7 @@
   align-items: center;
   gap: 30px;
   border-radius: 100px;
-  color: #FFF;
+  color: #fff;
   font-family: "Plus Jakarta Sans";
   font-size: 28px;
   font-style: normal;
@@ -51,7 +45,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: #5A61FF;
+  background: #5a61ff;
   border-radius: inherit;
   z-index: -1;
   transform-origin: center center;
@@ -62,11 +56,6 @@
 .button-container-about:hover .magic-button-about::before {
   transform: scale(1.1, 1.5);
 }
-
-
-
-
-
 
 .design-that-inspires2,
 .we-are-marasih2 {
@@ -690,9 +679,6 @@
   /* margin: 0; */
   margin-top: -24px;
   font-size: 28px;
-
-
-
 }
 
 .at-marasih-studio-container {
@@ -835,7 +821,6 @@
 .staying-at-the {
   margin-top: -11px;
   font-size: 30px;
-
 }
 
 .at-marasih-studio-container2 {
@@ -859,7 +844,8 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  padding: var(--padding-83xl) var(--padding-37xl) var(--padding-82xl) var(--padding-36xl);
+  padding: var(--padding-83xl) var(--padding-37xl) var(--padding-82xl)
+    var(--padding-36xl);
   max-width: 100%;
 }
 
@@ -873,7 +859,6 @@
   right: -0.5px;
   bottom: 0;
   left: 0.5px;
-
 }
 
 .frame-child31 {
@@ -891,7 +876,6 @@
   max-height: 100%;
   z-index: 2;
   /* margin-left: -106px !important; */
-
 }
 
 .frame-group-child {
@@ -999,7 +983,6 @@
   background: linear-gradient(180deg, #5f5f5f, #fff 41.15%, #3f3e3e);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-
 }
 
 .marasih-studios-expertise-container {
@@ -1608,7 +1591,8 @@
 .image-parent {
   flex-direction: column;
   justify-content: flex-start;
-  padding: var(--padding-31xl) var(--padding-11xl) var(--padding-31xl) var(--padding-31xl);
+  padding: var(--padding-31xl) var(--padding-11xl) var(--padding-31xl)
+    var(--padding-31xl);
   box-sizing: border-box;
   position: relative;
   gap: 51px;
@@ -1697,7 +1681,8 @@
   border-radius: var(--br-81xl);
   background-color: var(--color-mediumslateblue-200);
   flex-direction: row;
-  padding: var(--padding-7xl) var(--padding-34xl) var(--padding-7xl) var(--padding-33xl);
+  padding: var(--padding-7xl) var(--padding-34xl) var(--padding-7xl)
+    var(--padding-33xl);
   gap: var(--gap-3xl);
   z-index: 2;
   font-size: var(--font-size-9xl);
@@ -1797,10 +1782,12 @@
   line-height: 145.5px;
   font-weight: 800;
   font-family: inherit;
-  background: linear-gradient(97.37deg,
+  background: linear-gradient(
+      97.37deg,
       #000,
       rgba(122, 122, 122, 0.53) 28.24%,
-      #404040),
+      #404040
+    ),
     #fff;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -2177,7 +2164,8 @@
 
 .master-frame {
   width: 1757px;
-  padding: var(--padding-101xl) var(--padding-50xl) var(--padding-31xl) var(--padding-49xl);
+  padding: var(--padding-101xl) var(--padding-50xl) var(--padding-31xl)
+    var(--padding-49xl);
   gap: var(--gap-132xl);
   max-width: 100%;
   font-size: var(--font-size-101xl);
@@ -2555,7 +2543,7 @@
   }
 }
 
-@media screen and (max-width: 450px) {
+/* @media screen and (max-width: 450px) {
   .design-that-inspires2 {
     font-size: var(--font-size-29xl);
     line-height: 72px;
@@ -2797,5 +2785,103 @@
 
   .frame-header {
     gap: var(--gap-28xl);
+  }
+} */
+
+@media screen and (max-width: 1200px) {
+  .frame-header {
+    zoom: 0% !important;
+  }
+  .marasih-design-studio {
+    font-size: 19px;
+  }
+  .a-versatile-design-container {
+    margin-top: -38px;
+
+    font-size: 22px;
+    line-height: 2;
+  }
+  .knows-no-bounds {
+    font-size: 26px;
+    margin-top: -10px;
+  }
+  .where-creativity-knows-no-boun {
+    margin-top: -50px;
+  }
+  .we-dont-just {
+    font-size: 15px;
+    margin-top: -117px;
+  }
+  .button-container-about {
+    width: 254px;
+    height: 72px;
+    margin-top: -215px;
+  }
+  .magic-button-about::before {
+    top: 15px;
+    left: 82px;
+    width: 59%;
+    height: 62%;
+  }
+
+  .emoji-waving-hand1 {
+    height: 25px;
+    width: 25px;
+  }
+  .magic-button-about {
+    font-size: 15px;
+    white-space: nowrap;
+  }
+
+  .center-about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .marasih-center {
+    width: 87%;
+    margin-top: -132px;
+  }
+  .our-story-center {
+    width: 87%;
+    margin-top: 29px;
+  }
+  .our-mission-center {
+    width: 98%;
+    margin-top: 29px;
+  }
+  .center-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .lets-create-special1 {
+    font-size: 15px;
+    white-space: nowrap;
+    margin-top: -12px;
+  }
+
+  .group-user-experience {
+    height: 40px;
+    margin-top: -18px;
+  }
+
+  .frame-child35 {
+    height: 66%;
+    top: 43px;
+  }
+
+  .lets-impressed-with {
+    font-size: 16px;
+    font-family: var(--font-figtree);
+  }
+
+  .create-frame {
+    height: 130px;
+    width: 130px;
+    top: -20px;
   }
 }
