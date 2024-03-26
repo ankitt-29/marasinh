@@ -1676,6 +1676,43 @@
   box-sizing: border-box;
   max-width: 100%;
 }
+.our-mission-desktop{
+  width: 38%;
+}
+.shape-group {
+  position: relative;
+}
+.checking{
+  width: 40%;
+position: absolute;
+}
+/* Add pink shadow */
+.shape-group::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 50%; /* Adjust as needed */
+  height: 50%; /* Adjust as needed */
+  background-color: pink; /* Change the color as needed */
+  opacity: 0.5; /* Adjust opacity if needed */
+  z-index: -1;
+}
+
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 24px;
+  user-select: text; /* Allow text selection */
+}
 
 .create-your-frame {
   border-radius: var(--br-81xl);

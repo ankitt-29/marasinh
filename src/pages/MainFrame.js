@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 
 import "./MainFrame.css";
 import Behance from "./behance";
+import Offcanvas from "./Offcanvas";
 
 const MainFrame = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 1200);
@@ -30,16 +31,10 @@ const MainFrame = () => {
       {isMobile ? (
         <div>
           <div className="main-frame">
-            <div className="we-are-marasih1">We are marasih studio</div>
-            <div className="design-that-inspires1">
-              Design that Inspires, Connects, and Sparks Growth
-            </div>
-            <div className="rectangle-parent12">
-              <div className="frame-child20" />
-              <div className="lets-talk4">Let’s talk</div>
-              <img className="emoji-waving-hand2" alt="" />
-            </div>
-            <header className="inner-frame-a">
+            <Offcanvas/>
+            
+            {/* <Offcanvas/> */}
+            {/* <header className="inner-frame-a">
               <img
                 className="layer-1-icon4"
                 loading="eager"
@@ -78,7 +73,7 @@ const MainFrame = () => {
                   <div className="lets-talk5">Let’s Talk</div>
                 </button>
               </div>
-            </header>
+            </header> */}
             <div className="star-star-frame">
               <h2 className="crafted-with-care1">Crafted with care</h2>
               <div className="frame-mask-group-socialine">

@@ -4,6 +4,7 @@ import Footer from "./Footer";
 import { useNavigate } from "react-router-dom";
 
 import "./FrameHeader.css";
+import Offcanvas from "./Offcanvas";
 
 const FrameHeader = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 1200);
@@ -31,63 +32,8 @@ const FrameHeader = () => {
       {isMobile ? (
         <div>
           <div className="frame-header">
-            <div className="we-are-marasih2">We are marasih studio</div>
-            <div className="design-that-inspires2">
-              Design that Inspires, Connects, and Sparks Growth
-            </div>
-            <div className="rectangle-parent18">
-              <div className="frame-child27" />
-              <div className="lets-talk6">Let’s talk</div>
-              <img className="emoji-waving-hand3" alt="" />
-            </div>
-            <header className="group-main">
-              <img
-                className="layer-1-icon5"
-                loading="eager"
-                alt=""
-                src="/layer-1.svg"
-              />
-
-              <div className="inner-frames">
-                <div className="content-frame">
-                  <div className="link-frame">
-                    <div className="text-container">
-                      <a
-                        href="/work"
-                        className="work"
-                        onClick={(e) => handleNavigation(e, "/work")}
-                      >
-                        Work
-                      </a>
-                    </div>
-                    <div className="frame-footer">
-                      <div className="group-links" />
-                      <a
-                        href="/about"
-                        className="about3"
-                        onClick={(e) => handleNavigation(e, "/about")}
-                      >
-                        About
-                      </a>
-                    </div>
-                    <div className="contact-info-frame">
-                      <div className="" />
-                      <a
-                        href="/contact"
-                        className="contact-us"
-                        onClick={(e) => handleNavigation(e, "/contact")}
-                      >
-                        Contact Us
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <button className="rectangle-parent19">
-                  <div className="frame-child28" />
-                  <div className="lets-talk7">Let’s Talk</div>
-                </button>
-              </div>
-            </header>
+           
+        <Offcanvas/>
             <section className="text-email-address">
               <h2 className="marasih-design-studio">Marasih design studio</h2>
               <div className="group-social-media">
@@ -345,7 +291,7 @@ const FrameHeader = () => {
           </section>
           <section className="path">
             <div className="line-segment">
-              <div className="text-block">
+              {/* <div className="text-block">
                 <div className="text-block-child" />
                 <div className="divider">
                   <div className="image">
@@ -353,7 +299,8 @@ const FrameHeader = () => {
                   </div>
                   <div className="pixels-with-purpose">Pixels with Purpose</div>
                 </div>
-              </div>
+              </div> */}
+              <img className="our-mission-desktop" src="Our mission.webp"></img>
               <div className="pen">
                 <div className="pen-child" />
                 <div className="at-marasih-studio-container">
@@ -466,7 +413,7 @@ const FrameHeader = () => {
             </div>
             <div className="ellipse-with-text">
               <div className="shape-group">
-                <div className="symbol-instance" />
+                <div className="" />
                 <div className="service-frames">
                   <h3 className="elevate-with-exceptional">
                     Elevate with Exceptional Design Services
@@ -566,10 +513,10 @@ const FrameHeader = () => {
                     </div>
                   </div>
                   <div className="circle-frame">
-                    <div className="ellipse-shape1" />
                   </div>
                 </div>
               </div>
+              <img className="checking" src="/checking.png"/>
               <div className="shape-group1">
                 <div className="image-parent">
                   <div className="image1" />
@@ -649,7 +596,7 @@ const FrameHeader = () => {
                     <div className="lets-create-special1">
                       Let’s create special
                     </div>
-                    <h3 class="h3">💭</h3>
+                    <h3 classnName="h3">💭</h3>
                   </button>
                 </div>
               </div>

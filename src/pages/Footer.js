@@ -73,7 +73,7 @@ function Footer() {
         <div className="inner-ellipse">
           <div className="design-studio-title">
             <img
-              className="be-simple-be-container"
+              className=""
               src="/BE SIMPLE. BE CREATIVE..png"
             ></img>
             <div className="idea-frame">
