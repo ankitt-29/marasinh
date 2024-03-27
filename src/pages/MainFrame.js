@@ -12,6 +12,7 @@ const MainFrame = () => {
   const navigate = useNavigate();
 
   const handleNavigation = (route) => {
+    console.log("clicked");
     navigate(route);
   };
   useEffect(() => {
@@ -26,13 +27,25 @@ const MainFrame = () => {
     };
   }, []);
 
+  const handleClick = (event) => {
+    const image = event.target;
+    const imageWidth = image.offsetWidth;
+    const clickX = event.nativeEvent.offsetX;
+
+    if (clickX <= imageWidth / 2) {
+      window.location.href = "/left-page"; // Redirect to the left page
+    } else {
+      window.location.href = "/right-page"; // Redirect to the right page
+    }
+  };
+
   return (
     <div>
       {isMobile ? (
         <div>
           <div className="main-frame">
-            <Offcanvas/>
-            
+            <Offcanvas />
+
             {/* <Offcanvas/> */}
             {/* <header className="inner-frame-a">
               <img
@@ -127,7 +140,16 @@ const MainFrame = () => {
 
               <div className="creativity-box">
                 <img className="we-creativity" src="/creativity.png" alt="" />
-                <Behance/>
+                {/* <Behance /> */}
+                <div className="group-with-images-wrapper">
+                  <img
+                    className="behance-name"
+                    src="/behance-name.png"
+                    alt=""
+                    onClick={handleClick}
+                    style={{ width: "80%", height: "auto" }} 
+                  />
+                </div>
               </div>
             </div>
             <Footer />
@@ -171,8 +193,12 @@ const MainFrame = () => {
                   About
                 </div>
                 <div
+                href="/contact"
                   className="contact-us4"
-                  onClick={() => handleNavigation("/contact")}
+                  onClick={(event) => {
+                    event.preventDefault(); // Prevent default behavior
+                    handleNavigation("/contact");
+                  }}
                 >
                   Contact us
                 </div>
@@ -232,7 +258,7 @@ const MainFrame = () => {
                   <img
                     className="mask-group-icon5"
                     alt=""
-                    src="/mask-group@2x.png"
+                    src="/new-mask-group.png"
                   />
                   <h3 className="unleash">Unleash</h3>
                   <div className="design-agency-website">
@@ -270,7 +296,7 @@ const MainFrame = () => {
                     className="mask-group-icon8"
                     loading="eager"
                     alt=""
-                    src="/mask-group-31@2x.png"
+                    src="/roast-master.png"
                   />
                   <h3 className="roast-masters">Roast Masters</h3>
                   <div className="coffee-packaging-design">
@@ -307,7 +333,7 @@ const MainFrame = () => {
                     className="mask-group-icon11"
                     loading="eager"
                     alt=""
-                    src="/mask-group-6.svg"
+                    src="/posify-desktop.png"
                   />
                 </div>
                 <div className="socialline-app-logos4">
@@ -355,7 +381,7 @@ const MainFrame = () => {
                       className="mask-group-icon14"
                       loading="eager"
                       alt=""
-                      src="/mask-group-9@2x.png"
+                      src="/flexforce-desktop.png"
                     />
                     <div className="flexforce">FlexForce</div>
                     <div className="fitness-web">{`Fitness web & app`}</div>
@@ -395,44 +421,18 @@ const MainFrame = () => {
                   </div>
                 </div>
                 <div className="group-with-images-wrapper">
-                  <div className="group-with-images">
-                    <div className="image-18-parent">
-                      <img
-                        className="image-18-icon"
-                        loading="eager"
-                        alt=""
-                        src="/image-18@2x.png"
-                      />
-                      <img
-                        className="image-19-icon"
-                        loading="eager"
-                        alt=""
-                        src="/image-19@2x.png"
-                      />
-                      <div className="rectangle-shape5" />
-                    </div>
-                    <div className="image-16-parent">
-                      <img
-                        className="image-16-icon"
-                        alt=""
-                        src="/image-16@2x.png"
-                      />
-                      <img
-                        className="dribble-svg-icon"
-                        loading="eager"
-                        alt=""
-                        src="/dribble-svg.svg"
-                      />
-                    </div>
-                    <img
-                      className="group-with-images-child"
-                      alt=""
-                      src="/group-34434.svg"
-                    />
-                  </div>
+                  <img
+                    className="behance-name"
+                    src="/behance-name.png"
+                    alt=""
+                    onClick={handleClick}
+                    style={{ width: "80%", height: "auto" }} 
+                  />
                 </div>
               </section>
             </main>
+
+            <Footer />
           </div>
         </div>
       )}

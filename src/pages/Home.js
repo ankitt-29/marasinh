@@ -7,6 +7,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Footer from "./Footer";
 import Test from "./Test";
 import Offcanvas from "./Offcanvas";
+import { useNavigate } from "react-router-dom";
 
 const HeaderFrame = () => {
   const sliderRef = useRef(null);
@@ -127,6 +128,14 @@ const HeaderFrame = () => {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
+
+  const navigate = useNavigate();
+
+  const handleNavigation = (event, route) => {
+    event.preventDefault();
+    navigate(route);
+  };
+
 
   return (
     <div className="marasih-home-page">
@@ -1138,7 +1147,7 @@ const HeaderFrame = () => {
                   <img className="emoji-waving-hand" alt="" />
                 </div>
                 <section className="content-group">
-                  <header className="first-mask-group">
+                  {/* <header className="first-mask-group">
                     <img
                       className="layer-1-icon2"
                       loading="eager"
@@ -1163,7 +1172,56 @@ const HeaderFrame = () => {
                         <div className="lets-talk2">Let’s Talk</div>
                       </button>
                     </div>
-                  </header>
+                  </header> */}
+                   <header className="group-main">
+            <img
+              className="layer-1-icon5"
+              loading="eager"
+              alt=""
+              src="/layer-1.svg"
+            />
+
+            <div className="inner-frames">
+              <div className="content-frame">
+                <div className="link-frame">
+                <div className="frame-footer">
+                    <div className="group-links" />
+                    <a
+                      href="/about"
+                      className="about3"
+                      onClick={(e) => handleNavigation(e, "/")}
+                    >
+                      Home
+                    </a>
+                  </div>
+                  <div className="text-container">
+                    <a
+                      href="/work"
+                      className="work"
+                      onClick={(e) => handleNavigation(e, "/work")}
+                    >
+                      Work
+                    </a>
+                  </div>
+                  
+                  <div className="contact-info-frame">
+                    <div className="" />
+                    <a
+                      href="/contact"
+                      className="contact-us"
+                      onClick={(e) => handleNavigation(e, "/about")}
+                    >
+                      About us
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <button className="rectangle-parent19">
+                <div className="frame-child28" />
+                <div className="lets-talk7">Contact</div>
+              </button>
+            </div>
+          </header>
                   <div className="team-intro-frame">
                     <div className="first-name-frame">
                       <div className="last-name-frame" />

@@ -6,6 +6,7 @@ import emailjs from "emailjs-com";
 import Footer from "./Footer";
 import OffcanvasNavbar from "./OffcanvasNavbar";
 import Offcanvas from "./Offcanvas";
+import { useNavigate } from "react-router-dom";
 
 const Contact = () => {
   const [selectedServices, setSelectedServices] = useState([]);
@@ -191,6 +192,12 @@ const Contact = () => {
       setIsNavbarOpen(false);
     }
   };
+  const navigate = useNavigate();
+
+  const handleNavigation = (event, route) => {
+    event.preventDefault();
+    navigate(route);
+  };
   return (
     <div>
       <div>
@@ -198,7 +205,7 @@ const Contact = () => {
           <div>
             <div className="marasinh-contact-page">
               <div className="container-group">
-              <Offcanvas/>
+                <Offcanvas />
                 {/* <header className="background-frame">
       <nav id="navbar_main" className={`mobile-offcanvas navbar navbar-expand-lg navbar-dark bg-primary ${isNavbarOpen ? 'show' : ''}`}>
         <div className="container-fluid">
@@ -288,7 +295,9 @@ const Contact = () => {
       </div>
     </header> */}
                 <section className="divider-line">
-                  <b className="unleash-your-brands">Unleash Your Brand's Story</b>
+                  <b className="unleash-your-brands">
+                    Unleash Your Brand's Story
+                  </b>
                   <div className="explore-link">
                     <div className="wrapper-about-us-links">
                       <img
@@ -308,15 +317,17 @@ const Contact = () => {
                     </div>
                     <h1 className="a-message-away-container">
                       <span className="a-message">{`A message away from turning your dreams into `}</span>
-                      <span className="digital-realities">digital realities</span>
+                      <span className="digital-realities">
+                        digital realities
+                      </span>
                     </h1>
                   </div>
                   <div className="contact-info-frames">
                     <div className="together-well-craft">
                       {" "}
                       <p>
-                        Together, we'll craft a digital landscape that goes beyond
-                        limits and sets new standards for excellence.
+                        Together, we'll craft a digital landscape that goes
+                        beyond limits and sets new standards for excellence.
                       </p>
                     </div>
                     <div className="button-container">
@@ -362,7 +373,9 @@ const Contact = () => {
                             type="text"
                             className="custom-input"
                             value={formData.phoneNumber}
-                            onChange={(e) => handleInputChange(e, "phoneNumber")}
+                            onChange={(e) =>
+                              handleInputChange(e, "phoneNumber")
+                            }
                           />
                           <input
                             placeholder="Your organization name"
@@ -393,10 +406,11 @@ const Contact = () => {
 
                         <div className="work-aboutus-blogs-contactus">
                           <label
-                            className={`rectangle-parent4 ${formData.projectType.includes("Mobile app")
+                            className={`rectangle-parent4 ${
+                              formData.projectType.includes("Mobile app")
                                 ? "checked"
                                 : ""
-                              }`}
+                            }`}
                             style={{
                               flexShrink: 0,
                               borderRadius: "100px",
@@ -415,7 +429,9 @@ const Contact = () => {
                             <input
                               type="checkbox"
                               className="hidden-checkbox"
-                              checked={formData.projectType.includes("Mobile app")}
+                              checked={formData.projectType.includes(
+                                "Mobile app"
+                              )}
                               onChange={() =>
                                 handleCheckboxChangeService("Mobile app")
                               }
@@ -425,15 +441,18 @@ const Contact = () => {
                           </label>
 
                           <label
-                            className={`rectangle-parent4 ${formData.projectType.includes("Website")
+                            className={`rectangle-parent4 ${
+                              formData.projectType.includes("Website")
                                 ? "checked"
                                 : ""
-                              }`}
+                            }`}
                             style={{
                               flexShrink: 0,
                               borderRadius: "100px",
                               border: "1px solid #7C6493",
-                              background: formData.projectType.includes("Website")
+                              background: formData.projectType.includes(
+                                "Website"
+                              )
                                 ? "#5A61FF"
                                 : "rgba(255, 255, 255, 0.05)",
                               display: "flex",
@@ -455,15 +474,18 @@ const Contact = () => {
                           </label>
 
                           <label
-                            className={`rectangle-parent4 ${formData.projectType.includes("Branding")
+                            className={`rectangle-parent4 ${
+                              formData.projectType.includes("Branding")
                                 ? "checked"
                                 : ""
-                              }`}
+                            }`}
                             style={{
                               flexShrink: 0,
                               borderRadius: "100px",
                               border: "1px solid #7C6493",
-                              background: formData.projectType.includes("Branding")
+                              background: formData.projectType.includes(
+                                "Branding"
+                              )
                                 ? "#5A61FF"
                                 : "rgba(255, 255, 255, 0.05)",
                               display: "flex",
@@ -475,7 +497,9 @@ const Contact = () => {
                             <input
                               type="checkbox"
                               className="hidden-checkbox"
-                              checked={formData.projectType.includes("Branding")}
+                              checked={formData.projectType.includes(
+                                "Branding"
+                              )}
                               onChange={() =>
                                 handleCheckboxChangeService("Branding")
                               }
@@ -485,10 +509,11 @@ const Contact = () => {
                           </label>
 
                           <label
-                            className={`rectangle-parent4 ${formData.projectType.includes("Social media")
+                            className={`rectangle-parent4 ${
+                              formData.projectType.includes("Social media")
                                 ? "checked"
                                 : ""
-                              }`}
+                            }`}
                             style={{
                               flexShrink: 0,
                               borderRadius: "100px",
@@ -519,10 +544,11 @@ const Contact = () => {
                           </label>
 
                           <label
-                            className={`rectangle-parent4 ${formData.projectType.includes("Other")
+                            className={`rectangle-parent4 ${
+                              formData.projectType.includes("Other")
                                 ? "checked"
                                 : ""
-                              }`}
+                            }`}
                             style={{
                               flexShrink: 0,
                               borderRadius: "100px",
@@ -540,19 +566,24 @@ const Contact = () => {
                               type="checkbox"
                               className="hidden-checkbox"
                               checked={formData.projectType.includes("Other")}
-                              onChange={() => handleCheckboxChangeService("Other")}
+                              onChange={() =>
+                                handleCheckboxChangeService("Other")
+                              }
                               style={{ display: "none" }}
                             />
                             <span className="checkbox-text">Other</span>
                           </label>
                         </div>
-                        <div class="select-your-budget">Select your budget type:</div>
+                        <div class="select-your-budget">
+                          Select your budget type:
+                        </div>
                         <div className="another-div-child">
                           <label
-                            className={`group-button child1 ${formData.projectBudget === "Less than $5K"
+                            className={`group-button child1 ${
+                              formData.projectBudget === "Less than $5K"
                                 ? "checked"
                                 : ""
-                              }`}
+                            }`}
                             style={{
                               flexShrink: 0,
                               borderRadius: "100px",
@@ -569,18 +600,23 @@ const Contact = () => {
                             <input
                               type="checkbox"
                               className="hidden-checkbox"
-                              checked={formData.projectBudget === "Less than $5K"}
-                              onChange={() => handleCheckboxChange("Less than $5K")}
+                              checked={
+                                formData.projectBudget === "Less than $5K"
+                              }
+                              onChange={() =>
+                                handleCheckboxChange("Less than $5K")
+                              }
                               style={{ display: "none" }}
                             />
                             <span className="checkbox-text">Less than $5K</span>
                           </label>
 
                           <label
-                            className={`group-button child2 ${formData.projectBudget === "$5K to $10K"
+                            className={`group-button child2 ${
+                              formData.projectBudget === "$5K to $10K"
                                 ? "checked"
                                 : ""
-                              }`}
+                            }`}
                             style={{
                               display: "flex",
                               flexShrink: 0,
@@ -599,17 +635,20 @@ const Contact = () => {
                               type="checkbox"
                               className="hidden-checkbox"
                               checked={formData.projectBudget === "$5K to $10K"}
-                              onChange={() => handleCheckboxChange("$5K to $10K")}
+                              onChange={() =>
+                                handleCheckboxChange("$5K to $10K")
+                              }
                               style={{ display: "none" }}
                             />
                             <span className="checkbox-text">$5K to $10K</span>
                           </label>
 
                           <label
-                            className={`group-button child3 ${formData.projectBudget === "$10K to $25K"
+                            className={`group-button child3 ${
+                              formData.projectBudget === "$10K to $25K"
                                 ? "checked"
                                 : ""
-                              }`}
+                            }`}
                             style={{
                               display: "flex",
                               // width: '306px',
@@ -627,18 +666,23 @@ const Contact = () => {
                             <input
                               type="checkbox"
                               className="hidden-checkbox"
-                              checked={formData.projectBudget === "$10K to $25K"}
-                              onChange={() => handleCheckboxChange("$10K to $25K")}
+                              checked={
+                                formData.projectBudget === "$10K to $25K"
+                              }
+                              onChange={() =>
+                                handleCheckboxChange("$10K to $25K")
+                              }
                               style={{ display: "none" }}
                             />
                             <span className="checkbox-text">$10K to $25K</span>
                           </label>
 
                           <label
-                            className={`group-button child4  ${formData.projectBudget === "$25K to $45K"
+                            className={`group-button child4  ${
+                              formData.projectBudget === "$25K to $45K"
                                 ? "checked"
                                 : ""
-                              }`}
+                            }`}
                             style={{
                               display: "flex",
                               // width: '306px',
@@ -656,8 +700,12 @@ const Contact = () => {
                             <input
                               type="checkbox"
                               className="hidden-checkbox"
-                              checked={formData.projectBudget === "$25K to $45K"}
-                              onChange={() => handleCheckboxChange("$25K to $45K")}
+                              checked={
+                                formData.projectBudget === "$25K to $45K"
+                              }
+                              onChange={() =>
+                                handleCheckboxChange("$25K to $45K")
+                              }
                               style={{ display: "none" }}
                             />
                             <span className="checkbox-text">$25K to $45K</span>
@@ -696,46 +744,47 @@ const Contact = () => {
                       </div>
                     </div>
                   </div>
-
-                  <div className="instagram-icon-frame">
-                    <div className="dribbble-icon-frame" />
-                    <div className="behance-icon-frame">
-                      <div className="twitter-icon-frame">
-                        <h3 className="ping-us">Ping us</h3>
-                      </div>
-                      <a href="#" className="marasihstudiogmailcom1">
-                        marasihstudio@gmail.com
-                      </a>
-                    </div>
-                    <div className="text-frame-with-image">
-                      <h3 className="follow-us">Follow us</h3>
-                      <div className="text-frame">
-                        <a href="#" className="instagram">
-                          Instagram
-                        </a>
-                        <div className="text-frame1">
-                          <a href="#" className="linkedin">
-                            LinkedIn
-                          </a>
+                  <div className="center-item">
+                    <div className="instagram-icon-frame">
+                      <div className="dribbble-icon-frame" />
+                      <div className="behance-icon-frame">
+                        <div className="twitter-icon-frame">
+                          <h3 className="ping-us">Ping us</h3>
                         </div>
-                        <a href="#" className="dribbble">
-                          Dribbble
+                        <a href="#" className="marasihstudiogmailcom1">
+                          marasihstudio@gmail.com
                         </a>
-                        <a href="#" className="behance">
-                          Behance
-                        </a>
-                        <a href="#" className="twitter">
-                          Twitter
-                        </a>
-                        <div className="ellipse-shape-with-fill">
-                          {/* <div className="rectangle-shape" /> */}
-                          <a href="#" className="figma1">
-                            Figma
+                      </div>
+                      <div className="text-frame-with-image">
+                        <h3 className="follow-us">Follow us</h3>
+                        <div className="text-frame">
+                          <a href="#" className="instagram">
+                            Instagram
                           </a>
+                          <div className="text-frame1">
+                            <a href="#" className="linkedin">
+                              LinkedIn
+                            </a>
+                          </div>
+                          <a href="#" className="dribbble">
+                            Dribbble
+                          </a>
+                          <a href="#" className="behance">
+                            Behance
+                          </a>
+                          <a href="#" className="twitter">
+                            Twitter
+                          </a>
+                          <div className="ellipse-shape-with-fill">
+                            {/* <div className="rectangle-shape" /> */}
+                            <a href="#" className="figma1">
+                              Figma
+                            </a>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
+                  </div>  
                 </section>
 
                 <Footer />
@@ -744,38 +793,53 @@ const Contact = () => {
           </div>
         ) : (
           <div>
-              <div className="marasinh-contact-page">
+            <div className="marasinh-contact-page">
               <div className="container-group">
-                <header className="background-frame">
+                <header className="group-main">
                   <img
-                    className="layer-1-icon"
+                    className="layer-1-icon5"
                     loading="eager"
                     alt=""
                     src="/layer-1.svg"
                   />
-                  <div className=" ">
+
+                  <div className="inner-frames">
                     <div className="content-frame">
                       <div className="link-frame">
                         <div className="text-container">
-                          <a href="/" className="work">
+                          <a
+                            href="/"
+                            className="work"
+                            onClick={(e) => handleNavigation(e, "/")}
+                          >
                             Home
                           </a>
                         </div>
-                        <a href="#" className="about">
-                          Work
-                        </a>
+                        <div className="frame-footer">
+                          <div className="" />
+                          <div
+                            href="/"
+                            className="about3"
+                            onClick={(e) => handleNavigation(e, "/work")}
+                          >
+                            Work
+                          </div>
+                        </div>
                         <div className="contact-info-frame">
                           <div className="" />
-                          <a href="/about" className="contact-us">
-                            About Us
-                          </a>
+                          <div
+                            href="/"
+                            className="contact-us"
+                            onClick={(e) => handleNavigation(e, "/about")}
+                          >
+                            About us
+                          </div>
                         </div>
                       </div>
                     </div>
-
-                    <button className="rectangle-parent">
-                      <div className="frame-child" />
-                      <div className="lets-talk">Contact</div>
+                    <button className="rectangle-parent19">
+                      <div className="frame-child28" />
+                      <div className="lets-talk7">Contact</div>
                     </button>
                   </div>
                 </header>
@@ -868,7 +932,9 @@ const Contact = () => {
       </div>
     </header> */}
                 <section className="divider-line">
-                  <b className="unleash-your-brands">Unleash Your Brand's Story</b>
+                  <b className="unleash-your-brands">
+                    Unleash Your Brand's Story
+                  </b>
                   <div className="explore-link">
                     <div className="wrapper-about-us-links">
                       <img
@@ -888,15 +954,17 @@ const Contact = () => {
                     </div>
                     <h1 className="a-message-away-container">
                       <span className="a-message">{`A message away from turning your dreams into `}</span>
-                      <span className="digital-realities">digital realities</span>
+                      <span className="digital-realities">
+                        digital realities
+                      </span>
                     </h1>
                   </div>
                   <div className="contact-info-frames">
                     <div className="together-well-craft">
                       {" "}
                       <p>
-                        Together, we'll craft a digital landscape that goes beyond
-                        limits and sets new standards for excellence.
+                        Together, we'll craft a digital landscape that goes
+                        beyond limits and sets new standards for excellence.
                       </p>
                     </div>
                     <div className="button-container">
@@ -942,7 +1010,9 @@ const Contact = () => {
                             type="text"
                             className="custom-input"
                             value={formData.phoneNumber}
-                            onChange={(e) => handleInputChange(e, "phoneNumber")}
+                            onChange={(e) =>
+                              handleInputChange(e, "phoneNumber")
+                            }
                           />
                           <input
                             placeholder="Your organization name"
@@ -962,9 +1032,9 @@ const Contact = () => {
                           <div className="project-type-selector">
                             <div className="branding-social-media-other">
                               <div className="mobile-app-website-group">
-                                <div className="mobile-app-website-group-child" />
+                                {/* <div className="mobile-app-website-group-child" /> */}
                                 <div className="select-your-project">
-                                  Select your project type:
+                                  🔵 Select your project type:
                                 </div>
                               </div>
                             </div>
@@ -973,10 +1043,11 @@ const Contact = () => {
 
                         <div className="work-aboutus-blogs-contactus">
                           <label
-                            className={`rectangle-parent4 ${formData.projectType.includes("Mobile app")
+                            className={`rectangle-parent4 ${
+                              formData.projectType.includes("Mobile app")
                                 ? "checked"
                                 : ""
-                              }`}
+                            }`}
                             style={{
                               flexShrink: 0,
                               borderRadius: "100px",
@@ -995,7 +1066,9 @@ const Contact = () => {
                             <input
                               type="checkbox"
                               className="hidden-checkbox"
-                              checked={formData.projectType.includes("Mobile app")}
+                              checked={formData.projectType.includes(
+                                "Mobile app"
+                              )}
                               onChange={() =>
                                 handleCheckboxChangeService("Mobile app")
                               }
@@ -1005,15 +1078,18 @@ const Contact = () => {
                           </label>
 
                           <label
-                            className={`rectangle-parent4 ${formData.projectType.includes("Website")
+                            className={`rectangle-parent4 ${
+                              formData.projectType.includes("Website")
                                 ? "checked"
                                 : ""
-                              }`}
+                            }`}
                             style={{
                               flexShrink: 0,
                               borderRadius: "100px",
                               border: "1px solid #7C6493",
-                              background: formData.projectType.includes("Website")
+                              background: formData.projectType.includes(
+                                "Website"
+                              )
                                 ? "#5A61FF"
                                 : "rgba(255, 255, 255, 0.05)",
                               display: "flex",
@@ -1035,15 +1111,18 @@ const Contact = () => {
                           </label>
 
                           <label
-                            className={`rectangle-parent4 ${formData.projectType.includes("Branding")
+                            className={`rectangle-parent4 ${
+                              formData.projectType.includes("Branding")
                                 ? "checked"
                                 : ""
-                              }`}
+                            }`}
                             style={{
                               flexShrink: 0,
                               borderRadius: "100px",
                               border: "1px solid #7C6493",
-                              background: formData.projectType.includes("Branding")
+                              background: formData.projectType.includes(
+                                "Branding"
+                              )
                                 ? "#5A61FF"
                                 : "rgba(255, 255, 255, 0.05)",
                               display: "flex",
@@ -1055,7 +1134,9 @@ const Contact = () => {
                             <input
                               type="checkbox"
                               className="hidden-checkbox"
-                              checked={formData.projectType.includes("Branding")}
+                              checked={formData.projectType.includes(
+                                "Branding"
+                              )}
                               onChange={() =>
                                 handleCheckboxChangeService("Branding")
                               }
@@ -1065,10 +1146,11 @@ const Contact = () => {
                           </label>
 
                           <label
-                            className={`rectangle-parent4 ${formData.projectType.includes("Social media")
+                            className={`rectangle-parent4 ${
+                              formData.projectType.includes("Social media")
                                 ? "checked"
                                 : ""
-                              }`}
+                            }`}
                             style={{
                               flexShrink: 0,
                               borderRadius: "100px",
@@ -1099,10 +1181,11 @@ const Contact = () => {
                           </label>
 
                           <label
-                            className={`rectangle-parent4 ${formData.projectType.includes("Other")
+                            className={`rectangle-parent4 ${
+                              formData.projectType.includes("Other")
                                 ? "checked"
                                 : ""
-                              }`}
+                            }`}
                             style={{
                               flexShrink: 0,
                               borderRadius: "100px",
@@ -1120,19 +1203,34 @@ const Contact = () => {
                               type="checkbox"
                               className="hidden-checkbox"
                               checked={formData.projectType.includes("Other")}
-                              onChange={() => handleCheckboxChangeService("Other")}
+                              onChange={() =>
+                                handleCheckboxChangeService("Other")
+                              }
                               style={{ display: "none" }}
                             />
                             <span className="checkbox-text">Other</span>
                           </label>
                         </div>
 
+                        <div className="">
+                          <div className="project-type-selector">
+                            <div className="branding-social-media-other">
+                              <div className="mobile-app-website-group">
+                                {/* <div className="mobile-app-website-group-child" /> */}
+                                <div className="select-your-project-budget">
+                                  🔵 Select your project budget:
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
                         <div className="another-div-child">
                           <label
-                            className={`group-button child1 ${formData.projectBudget === "Less than $5K"
+                            className={`group-button child1 ${
+                              formData.projectBudget === "Less than $5K"
                                 ? "checked"
                                 : ""
-                              }`}
+                            }`}
                             style={{
                               flexShrink: 0,
                               borderRadius: "100px",
@@ -1149,18 +1247,23 @@ const Contact = () => {
                             <input
                               type="checkbox"
                               className="hidden-checkbox"
-                              checked={formData.projectBudget === "Less than $5K"}
-                              onChange={() => handleCheckboxChange("Less than $5K")}
+                              checked={
+                                formData.projectBudget === "Less than $5K"
+                              }
+                              onChange={() =>
+                                handleCheckboxChange("Less than $5K")
+                              }
                               style={{ display: "none" }}
                             />
                             <span className="checkbox-text">Less than $5K</span>
                           </label>
 
                           <label
-                            className={`group-button child2 ${formData.projectBudget === "$5K to $10K"
+                            className={`group-button child2 ${
+                              formData.projectBudget === "$5K to $10K"
                                 ? "checked"
                                 : ""
-                              }`}
+                            }`}
                             style={{
                               display: "flex",
                               flexShrink: 0,
@@ -1179,17 +1282,20 @@ const Contact = () => {
                               type="checkbox"
                               className="hidden-checkbox"
                               checked={formData.projectBudget === "$5K to $10K"}
-                              onChange={() => handleCheckboxChange("$5K to $10K")}
+                              onChange={() =>
+                                handleCheckboxChange("$5K to $10K")
+                              }
                               style={{ display: "none" }}
                             />
                             <span className="checkbox-text">$5K to $10K</span>
                           </label>
 
                           <label
-                            className={`group-button child3 ${formData.projectBudget === "$10K to $25K"
+                            className={`group-button child3 ${
+                              formData.projectBudget === "$10K to $25K"
                                 ? "checked"
                                 : ""
-                              }`}
+                            }`}
                             style={{
                               display: "flex",
                               // width: '306px',
@@ -1207,18 +1313,23 @@ const Contact = () => {
                             <input
                               type="checkbox"
                               className="hidden-checkbox"
-                              checked={formData.projectBudget === "$10K to $25K"}
-                              onChange={() => handleCheckboxChange("$10K to $25K")}
+                              checked={
+                                formData.projectBudget === "$10K to $25K"
+                              }
+                              onChange={() =>
+                                handleCheckboxChange("$10K to $25K")
+                              }
                               style={{ display: "none" }}
                             />
                             <span className="checkbox-text">$10K to $25K</span>
                           </label>
 
                           <label
-                            className={`group-button child4  ${formData.projectBudget === "$25K to $45K"
+                            className={`group-button child4  ${
+                              formData.projectBudget === "$25K to $45K"
                                 ? "checked"
                                 : ""
-                              }`}
+                            }`}
                             style={{
                               display: "flex",
                               // width: '306px',
@@ -1236,8 +1347,12 @@ const Contact = () => {
                             <input
                               type="checkbox"
                               className="hidden-checkbox"
-                              checked={formData.projectBudget === "$25K to $45K"}
-                              onChange={() => handleCheckboxChange("$25K to $45K")}
+                              checked={
+                                formData.projectBudget === "$25K to $45K"
+                              }
+                              onChange={() =>
+                                handleCheckboxChange("$25K to $45K")
+                              }
                               style={{ display: "none" }}
                             />
                             <span className="checkbox-text">$25K to $45K</span>
@@ -1277,8 +1392,8 @@ const Contact = () => {
                     </div>
                   </div>
 
-                  <div className="instagram-icon-frame">
-                    <div className="dribbble-icon-frame" />
+                  {/* <div className="instagram-icon-frame">
+                    <div className="" />
                     <div className="behance-icon-frame">
                       <div className="twitter-icon-frame">
                         <h3 className="ping-us">Ping us</h3>
@@ -1308,10 +1423,58 @@ const Contact = () => {
                           Twitter
                         </a>
                         <div className="ellipse-shape-with-fill">
-                          <div className="rectangle-shape" />
+                          <div className="" />
                           <a href="#" className="figma1">
                             Figma
                           </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div> */}
+                  <div className="container-ping-us">
+                    <img
+                      className="ping-us-rect"
+                      src="/ping-us-rect.png"
+                      alt=""
+                    />
+                    <div className="content-overlay">
+                      <div className="instagram-icon-frame">
+                        <div className=""></div>
+                        <div className="behance-icon-frame">
+                          <div className="twitter-icon-frame">
+                            <h3 className="ping-us">Ping us</h3>
+                          </div>
+                          <a href="#" className="marasihstudiogmailcom1">
+                            marasihstudio@gmail.com
+                          </a>
+                        </div>
+                        <div className="text-frame-with-image">
+                          <h3 className="follow-us">Follow us</h3>
+                          <div className="text-frame">
+                            <a href="#" className="instagram">
+                              Instagram
+                            </a>
+                            <div className="text-frame1">
+                              <a href="#" className="linkedin">
+                                LinkedIn
+                              </a>
+                            </div>
+                            <a href="#" className="dribbble">
+                              Dribbble
+                            </a>
+                            <a href="#" className="behance">
+                              Behance
+                            </a>
+                            <a href="#" className="twitter">
+                              Twitter
+                            </a>
+                            <div className="ellipse-shape-with-fill">
+                              <div className=""></div>
+                              <a href="#" className="figma1">
+                                Figma
+                              </a>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>

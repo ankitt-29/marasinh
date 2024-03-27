@@ -29,16 +29,16 @@ export default function Behance() {
   return (
     <div className="animated">
       <img
-        className={`behance ${clickedImage === 'behance' ? 'slideLeft' : ''}`}
+        className="behance"
         src="/behance-cir.png"
         alt=""
-        onClick={() => handleClick('behance')}
+      //  onClick={() => handleClick('behance')}
       />
       <img
-        className={`dribble ${clickedImage === 'dribble' ? 'slideRight' : ''}`}
+        className="dribble"
         src="/dribble-cir.png"
         alt=""
-        onClick={() => handleClick('dribble')}
+      //  onClick={() => handleClick('dribble')}
       />
     </div>
   );
