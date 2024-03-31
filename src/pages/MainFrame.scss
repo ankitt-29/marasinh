@@ -1,5 +1,19 @@
+
+.desktop-work-page{
+
+
 .main-frame {
   zoom: 67% !important;
+}
+.color-contact{
+  background-color: #DBDDFF !important;
+  cursor: pointer;
+
+}
+
+.color-button{
+  color: #5A61FF !important;
+
 }
 
 .design-that-inspires1,
@@ -1078,7 +1092,7 @@
   bottom: 8px;
   left: 359px;
   width: 281px;
-  background-image: url(/public/image-16@2x.png);
+  // background-image: url(/public/image-16@2x.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
@@ -1501,7 +1515,7 @@
       rgba(23.612350970506668, 23.612350970506668, 23.612350970506668, 0) 100%
     );
     width: 370px;
-    height: 375px;
+    height: 319px;
     border-radius: 25px;
     margin-top: 68px;
     display: flex;
@@ -1515,4 +1529,5 @@
     border-radius: 22px;
     margin-top: -47px;
   }
+}
 }

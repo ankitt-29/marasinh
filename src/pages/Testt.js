@@ -1,10 +1,8 @@
 import React, { useRef } from 'react';
 import Slider from 'react-slick';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
-import { FaArrowRight } from 'react-icons/fa'; // Import FaArrowRight icon from react-icons/fa
-// import './Test.scss'
-const Test = () => {
+import { FaArrowRight } from 'react-icons/fa';
+import './mobileHometest.scss'
+const Testt = () => {
     const slider1 = useRef(null);
     const slider2 = useRef(null);
 
@@ -16,7 +14,7 @@ const Test = () => {
     const sliderSettings = {
         slidesToShow: 1,
         fade: true,
-        arrows: false, // Set arrows to false to hide navigation buttons
+        arrows: false,
     };
 
     // Determine the image paths based on screen size
@@ -28,22 +26,21 @@ const Test = () => {
     const thirdRightImage = window.innerWidth < 768 ? "/second-right-ser.png" : "/second-right-ser.png";
 
     return (
-        <div className=''>
-            <div className="slider-container">
-                <div className="slider">
-                    <Slider ref={slider1} {...sliderSettings}>
-                        <div className="slide"><img src={servicesImage} alt="Services Image" /></div>
-                        <div className="slide"><img src={secondLeftImage} alt="Second Left Image" /></div>
-                        <div className="slide"><img src={thirdLeftImage} alt="Third Left Image" /></div>
-                    </Slider>
-                </div>
-                <div className="slider">
-                    <Slider ref={slider2} {...sliderSettings}>
-                        <div className="slide"><img src={groupImage} alt="Group Image" /></div>
-                        <div className="slide"><img src={secondRightImage} alt="Second Right Image" /></div>
-                        <div className="slide"><img src={thirdRightImage} alt="Third Right Image" /></div>
-                    </Slider>
-                </div>
+        <div className='mobiletest'>
+        <div className='scrollable-container'>
+            <div className="monu">
+                <Slider ref={slider1} {...sliderSettings}>
+                    <div className="xyzzz"><img src={servicesImage} alt="Services Image" /></div>
+                    <div className="xyzzz"><img src={secondLeftImage} alt="Second Left Image" /></div>
+                    <div className="xyzzz"><img src={thirdLeftImage} alt="Third Left Image" /></div>
+                </Slider>
+            </div>
+            <div className="monu">
+                <Slider ref={slider2} {...sliderSettings}>
+                    <div className="xyzzz"><img src={groupImage} alt="Group Image" /></div>
+                    <div className="xyzzz"><img src={secondRightImage} alt="Second Right Image" /></div>
+                    <div className="xyzzz"><img src={thirdRightImage} alt="Third Right Image" /></div>
+                </Slider>
             </div>
             {/* Use your custom arrow buttons with the same functionality */}
             <div className='circle-button-service'>
@@ -55,7 +52,8 @@ const Test = () => {
                 </button>
             </div>
         </div>
+        </div>
     );
 };
 
-export default Test;
+export default Testt;

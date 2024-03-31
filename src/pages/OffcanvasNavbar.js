@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './contact.css';
+import './contact.scss';
 
 function OffcanvasNavbar() {
   const [isOpen, setIsOpen] = useState(false);

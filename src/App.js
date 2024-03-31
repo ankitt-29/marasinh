@@ -15,11 +15,19 @@ import Test from "./pages/Test";
 import Behance from "./pages/behance";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
-import Offcanvas from "./pages/Offcanvas";
-
-
-
-
+// import Offcanvas from "./pages/Offcanvas";
+import Mobile from "./pages/Mobile";
+import Testt from "./pages/Testt";
+import CustomSlider from "./pages/CustomSlider";
+import FooterMobile from "./pages/FooterMobile";
+import MobileMenu from "./pages/mobileMenu";
+import OffcanvasMenu from "./pages/OffcanvasMenu";
+import WorkOffcanvasMenu from "./pages/WorkOffcanvasMenu";
+import AboutOffcanvasMenu from "./pages/AboutOffcanvasMenu";
+import ContactOffcanvasMenu from "./pages/ContactOffcanvasMenu";
+// import MyComponent from "./pages/MyComponent";
+// import Mobile from "./pages/Mobile";
+// import HomePage from "./pages/components/HomePage";
 function App() {
   const action = useNavigationType();
   const location = useLocation();
@@ -36,7 +44,19 @@ function App() {
       <Route path="/work" element={<MainFrame />} />
       <Route path="/test" element={<Test />} />
       <Route path="/behance" element={<Behance />} />
-      <Route path="/offcanvas" element={<Offcanvas />} />
+      {/* <Route path="/offcanvas" element={<Offcanvas />} />  */}
+  <Route path="/home1" element={<OffcanvasMenu />} />
+  <Route path="/work1" element={<WorkOffcanvasMenu />} />
+
+  <Route path="/about1" element={<AboutOffcanvasMenu />} />
+
+  <Route path="/contact1" element={<ContactOffcanvasMenu />} />
+
+  
+
+
+
+
 
 
 

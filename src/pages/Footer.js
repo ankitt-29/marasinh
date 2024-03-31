@@ -68,6 +68,7 @@ function Footer() {
   };
 
   return (
+    <div className="desktop-contact-page">
     <div className="custom-rectangle">
       <section className="empty-ellipse">
         <div className="inner-ellipse">
@@ -379,6 +380,7 @@ function Footer() {
           </div>
         </div>
       </section>
+    </div>
     </div>
   );
 }

@@ -1,6 +1,11 @@
+
+.desktop-about-page{
+
 .frame-header {
   zoom: 67% !important;
 }
+
+
 
 .button-container-about {
   position: relative;
@@ -36,21 +41,25 @@
   text-decoration: none;
   position: relative;
   z-index: 1;
+  white-space: nowrap;
 }
-
+.emoji-waving-hand1{
+  width: 53px;
+}
 .magic-button-about::before {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  top: 3px;
+  left: 3px;
+  width: 99%;
+  height: 94%;
   background: #5a61ff;
   border-radius: inherit;
   z-index: -1;
   transform-origin: center center;
   transform: scale(1, 1);
   transition: transform 1s ease;
+  white-space: nowrap;
 }
 
 .button-container-about:hover .magic-button-about::before {
@@ -493,6 +502,7 @@
   background: linear-gradient(90.03deg, #715aff, #fff), #fff;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  white-space: nowrap;
 }
 
 .ellipse {
@@ -508,8 +518,8 @@
   align-self: stretch;
   height: 450px;
   position: relative;
-  font-size: var(--font-size-11xl);
-  line-height: 45px;
+  font-size: 25px;
+  line-height: 39px;
   font-family: var(--font-figtree);
   display: inline-block;
 }
@@ -678,7 +688,7 @@
 .blank-line,
 .every-project-is {
   /* margin: 0; */
-  margin-top: -24px;
+  margin-top: 0;
   font-size: 28px;
 }
 
@@ -746,7 +756,7 @@
   left: 1620px;
   border-radius: var(--br-26xl);
   background-color: var(--color-gray-800);
-  backdrop-filter: blur(250px);
+  backdrop-filter: blur(144px);
   border: 1px solid var(--color-mediumorchid);
   box-sizing: border-box;
   width: 100%;
@@ -754,6 +764,9 @@
   transform: rotate(180deg);
   transform-origin: 0 0;
   z-index: 1;
+}
+.goals-desktop{
+  width: 40%;
 }
 
 .ethics-in-every,
@@ -865,7 +878,7 @@
 .frame-child31 {
   border-radius: var(--br-26xl);
   background-color: var(--color-gray-800);
-  backdrop-filter: blur(250px);
+  backdrop-filter: blur(83px);
   border: 1px solid var(--color-slateblue);
   box-sizing: border-box;
   z-index: 1;
@@ -1616,7 +1629,7 @@
   left: 0;
   border-radius: var(--br-26xl);
   background-color: var(--color-gray-800);
-  backdrop-filter: blur(250px);
+  backdrop-filter: blur(85px);
   border: 1px solid var(--color-gray-700);
   box-sizing: border-box;
   z-index: 1;
@@ -1678,7 +1691,7 @@
   max-width: 100%;
 }
 .our-mission-desktop{
-  width: 38%;
+  width: 38.3%;
 }
 .shape-group {
   position: relative;
@@ -2217,7 +2230,7 @@ position: absolute;
   width: 100%;
   background-color: var(--color-black);
   overflow: hidden;
-  padding: var(--padding-30xl) var(--padding-2xl) 0 var(--padding-xl);
+  // padding: var(--padding-30xl) var(--padding-2xl) 0 var(--padding-xl);
   gap: var(--gap-171xl);
   letter-spacing: normal;
   font-size: var(--font-size-7xl);
@@ -2834,6 +2847,8 @@ position: absolute;
   }
   .marasih-design-studio {
     font-size: 19px;
+    margin-top: -35px;
+
   }
   .a-versatile-design-container {
     margin-top: -38px;
@@ -2924,4 +2939,5 @@ position: absolute;
     width: 130px;
     top: -20px;
   }
+}
 }

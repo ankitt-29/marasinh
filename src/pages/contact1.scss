@@ -1,3 +1,6 @@
+
+.desktop-contact-page{
+
 .marasinh-contact-page {
   zoom: 67%;
 }
@@ -95,15 +98,18 @@
   background-color: rgba(255, 255, 255, 0.05);
   margin: 10px;
 }
-
+.displayflex{
+  display: flex;
+  align-items: flex-start;
+}
 .custom-input::placeholder {
   position: absolute;
   font-weight: 600;
-  font-size: 30px;
+  font-size: 29px;
   font-family: var(--font-figtree);
   color: #6b6b6b;
-  top: 32px;
-  margin-left: 23px;
+  top: 34px;
+  margin-left: 48px;
 }
 
 .custom-input:focus {
@@ -151,7 +157,7 @@
   position: relative;
   overflow: hidden;
   z-index: 1;
-  backdrop-filter: blur(300px);
+  backdrop-filter: blur(110px);
 }
 
 .pink-shadow {
@@ -1165,10 +1171,33 @@
   line-height: 48px;
   font-weight: 600;
   z-index: 2;
-  margin-left: -536px;
-  margin-top: -73px;
+  margin-left: -493px;
+  margin-top: 10px;
   font-size: 29px;
 }
+
+.select-your-project {
+  position: relative; /* Position the text container relative to the bullet point */
+}
+
+.bullet-point::before {
+  content: "\2022"; /* Unicode character for bullet point */
+  color: #5A61FF; /* Color of the bullet point */
+  font-size: 1.5em; /* Increase the size of the bullet point */
+  position: absolute; /* Position the bullet point absolutely */
+  left: -1em; /* Adjust the position to align with the text */
+  top: 50%; /* Vertically center the bullet point */
+  transform: translateY(-50%); /* Adjust vertical positioning */
+}
+.bullet {
+  border-radius: 500px;
+  background-color: rgba(90.00000223517418, 97.00000181794167, 255, 1);
+  width: 21px;
+  height: 21px;
+  margin-right: 8px; /* Adjust spacing between bullet and text */
+}
+
+
 
 .select-your-project-budget {
   font-weight: 600;
@@ -2504,7 +2533,7 @@
   width: 100%;
   background-color: var(--color-black);
   overflow: hidden;
-  padding: var(--padding-30xl) var(--padding-2xl) 0 var(--padding-xl);
+  // padding: var(--padding-30xl) var(--padding-2xl) 0 var(--padding-xl);
   gap: var(--gap-171xl);
   letter-spacing: normal;
 }
@@ -3383,7 +3412,7 @@
 
   .custom-input::placeholder {
     font-size: 18px;
-    margin-top: -7px;
+    margin-top: -3px;
   }
 
   .mobile-app-website-group {
@@ -3466,7 +3495,7 @@
   }
 
   .dribbble-icon-frame{
-    background-color:    rgb(62 50 65 / 40%);
+    // background-color:    rgb(62 50 65 / 40%);
   }
 
   /* .submit-text {
@@ -3552,12 +3581,12 @@
   }
 
   .be-simple-be-container {
-    content: url("/public/be-simple-mini1.png");
+    // content: url("/public/be-simple-mini1.png");
     /* Replace with the path to your mobile image */
   }
 
   .simple-mini {
-    content: url("/public/be-simple-mini1.png");
+    // content: url("/public/be-simple-mini1.png");
     width: 124%;
 
     /* Replace with the path to your mobile image */
@@ -3599,7 +3628,7 @@
     transform: translate(-50%, -50%);
     max-width: 50%;
     max-height: 13%;
-    content: url("/public/marasih-mini.png");
+    // content: url("/public/marasih-mini.png");
     /* Replace with the path to your mobile image */
   }
 
@@ -3669,4 +3698,5 @@
     align-items: center;
     justify-content: center;
   }
+}
 }
