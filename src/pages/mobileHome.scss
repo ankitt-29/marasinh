@@ -15,6 +15,19 @@
   margin-top: -18px;
 
 }
+.center-divs{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.four-images{
+  width: 100%;
+  padding: 8px 0 8px 0;
+}
+.card-4{
+  width: 91% !important;
+}
 .footer-m{
   align-items: center;
 }
@@ -35,12 +48,13 @@
 //     linear-gradient(91deg, rgba(34, 51, 27, 0.5), rgba(196, 255, 168, 0) 87.5%),
 //     linear-gradient(-91deg, rgba(34, 51, 27, 0.5), rgba(196, 255, 168, 0) 87.5%);
 // }
+
 .services-custom-mobile {
-  height: 1100px;
-  background: 
-    linear-gradient(to bottom right, rgba(34, 51, 27, 0.5), rgba(196, 255, 168, 0) 87.5%),
-    linear-gradient(to top left, rgba(34, 51, 27, 0.5), rgba(196, 255, 168, 0) 87.5%);
+  height: auto;
+  background: linear-gradient(to bottom right, rgba(18, 24, 15, 0.5), rgba(196, 255, 168, 0) 87.5%),
+  linear-gradient(to top left, rgba(15, 22, 12, 0.5), rgba(49, 61, 44, 0) 87.5%);
 }
+
 
 .custom-slider {
   display: flex;
@@ -52,7 +66,7 @@
     width: 325px;
     position: absolute;
     margin: 0 !important;
-    right: 25px;
+    // right: 25px;
     bottom: 10px;
     line-height: 36px;
     font-weight: 500;
@@ -117,7 +131,7 @@
     left: -21px;
     border-radius: 50%;
     background-color: rgba(90, 97, 255, 0.8);
-    filter: blur(300px);
+    filter: blur(114px);
   }
   .we-marasih-studio {
     width: 107px;
@@ -144,7 +158,8 @@
   .tree-vertex {
     align-self: stretch;
     justify-content: center;
-    padding: 0 var(--padding-xl) 0 var(--padding-3xl);
+    align-items: center;
+    // padding: 0 var(--padding-xl) 0 var(--padding-3xl);
   }
   .frame-parent {
     flex: 1;
@@ -160,19 +175,19 @@
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    justify-content: flex-start;
+    justify-content: center;
     box-sizing: border-box;
     max-width: 100%;
   }
   .frame-wrapper {
     flex: 1;
-    padding: 0 0 92px var(--padding-6xl);
+    padding: 0 0 92px 0;
     font-size: var(--font-size-2xs);
     font-family: var(--font-space-grotesk);
   }
   .design-that-inspires-connects-parent {
     align-self: stretch;
-    padding: 0 var(--padding-6xl) 0 0;
+    // padding: 0 var(--padding-6xl) 0 0;
     position: relative;
     text-align: center;
     font-size: 24px;
@@ -267,8 +282,8 @@
     align-self: stretch;
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
-    justify-content: flex-start;
+    align-items: center;
+    justify-content: center;  
     padding: 0 var(--padding-22xl) 0 var(--padding-21xl);
   }
   .infused-with-passion {
@@ -639,7 +654,9 @@
     position: relative;
     border-radius: 19.23px;
     background-color: var(--color-gray-1000);
-    border: 1.1px solid var(--color-mediumslateblue-100);
+    // border: 1.1px solid var(--color-mediumslateblue-100);
+    border:1.1px solid #342a7b;
+    
     box-sizing: border-box;
     z-index: 1;
     text-align: left;
@@ -705,8 +722,8 @@
   .subtree-network {
     align-self: stretch;
     display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
+    align-items: center;
+    justify-content: center;
   }
   .rectangle-parent2 {
     border-radius: 19.23px;
@@ -725,8 +742,9 @@
   .leaf-interconnect {
     flex: 1;
     border-radius: var(--br-5xl);
-    background: linear-gradient(178.12deg, rgba(90, 97, 255, 0.5), transparent);
-    border: 1px solid var(--color-mediumslateblue-700);
+    background: linear-gradient(178.12deg, rgba(45, 50, 135, 0.5), transparent);
+// 1px solid rgb(18 19 37 / 54%);
+border: 1px solid rgba(18, 19, 37, 0.54);
     flex-direction: column;
     padding: var(--padding-11xl) var(--padding-7xl) var(--padding-11xl)
       var(--padding-11xl);
@@ -1102,8 +1120,9 @@
   .rectangle-parent4,
   .rectangle-parent5 {
     display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
+    align-items: center;
+    justify-content: center;
+
     box-sizing: border-box;
   }
   .rectangle-parent5 {
@@ -1173,10 +1192,12 @@
     align-self: stretch;
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
-    justify-content: flex-start;
+    align-items: center;
+    justify-content: center;
     padding: 0 var(--padding-6xl);
     box-sizing: border-box;
+    padding-top: 95px;
+
     max-width: 100%;
   }
   .masters-of-the {
@@ -1290,8 +1311,14 @@
   .frame-parent8,
   .frame-wrapper2 {
     display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  .review-image{
+    width: 100%;
+    padding: 0 20px 0 20px;
   }
   .frame-wrapper2 {
     align-self: stretch;
@@ -1977,8 +2004,8 @@
     align-self: stretch;
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
-    justify-content: flex-start;
+    align-items: center;
+    justify-content: center;
     padding: 0 55px;
   }
   .digital-design-expertise {
@@ -2002,9 +2029,9 @@
     align-self: stretch;
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
-    justify-content: flex-start;
-    padding: 0 var(--padding-4xs);
+    align-items: center;
+    justify-content: center;
+    // padding: 0 var(--padding-4xs);
     font-size: var(--font-size-xs);
     color: var(--color-silver-100);
   }
@@ -2062,9 +2089,10 @@
   .frame-section,
   .frame-wrapper6 {
     display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
+    align-items: center;
+    justify-content: center;
   }
+
   .frame-wrapper6 {
     align-self: stretch;
     flex-direction: row;

@@ -52,7 +52,7 @@
 
 }
 .product{
-  margin-top: 25px;
+  margin-top: 4px;
 
 }
   .organization-name {
@@ -195,10 +195,10 @@
   .marasih-design-studio-wrapper {
     align-self: stretch;
     flex-direction: row;
-    padding: 0 var(--padding-56xl) 0 74px;
+    // padding: 0 var(--padding-56xl) 0 74px;
   }
   .frame-parent47 {
-    flex: 1;
+    // flex: 1;
     flex-direction: column;
     gap: var(--gap-31xl);
     max-width: 100%;
@@ -207,13 +207,14 @@
   .frame-wrapper19 {
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
+    align-items: center;
     box-sizing: border-box;
+    justify-content: center;
     max-width: 100%;
   }
   .frame-wrapper19 {
     flex: 1;
-    justify-content: flex-end;
+    justify-content: center;
     padding: 0 var(--padding-xs) 82.5px 0;
     font-size: 14px;
   }
@@ -278,7 +279,7 @@
     flex: 1;
     border-radius: 38.32px;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     gap: var(--gap-xs-5);
     z-index: 1;
   }
@@ -286,7 +287,7 @@
   .logic-gate,
   .rectangle-parent39 {
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content:center;
   }
   .rectangle-parent39 {
     flex: 1;
@@ -317,7 +318,7 @@ padding: 10%;  }
   .function-stack {
     align-self: stretch;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: center;
     padding: 0 var(--padding-13xl) var(--padding-11xl);
     text-align: center;
     font-size: var(--font-size-xs);
@@ -364,7 +365,7 @@ padding: 10%;  }
   }
   .a-tale-of {
     margin: 0;
-    font-size: inherit;
+    font-size: 31px;
     line-height: 40.5px;
     font-weight: 500;
     font-family: inherit;
@@ -468,8 +469,8 @@ padding: 10%;  }
     width: 325px;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
+    align-items: center;
+    justify-content: center;
     padding: 57.7px 47.20000000000073px 228.7px;
     box-sizing: border-box;
     position: relative;

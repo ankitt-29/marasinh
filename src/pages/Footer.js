@@ -164,18 +164,26 @@ function Footer() {
                   {/* <div className="design-studio">Design Studio</div> */}
                 </div>
               </div>
+
               <div className="kto-k-frames-group">
                 <div className="explore">Explore</div>
+
                 <div className="design-studio-frame1">
-                  <div className="work1">Work</div>
-                  <div className="about-us">About us</div>
-                  <div className="blogs">Blogs</div>
-                  <div className="contact-us1">Contact us</div>
-                </div>
+  <a href="/work" className="work1" style={{ textDecoration: 'none', color: '#ffffff' }}>Work</a>
+  <a href="/about" className="about-us" style={{ textDecoration: 'none', color: '#ffffff' }}>About us</a>
+  <a href="/blogs" className="blogs" style={{ textDecoration: 'none', color: '#ffffff' }}>Blogs</a>
+  <a href="/contact" className="contact-us1" style={{ textDecoration: 'none', color: '#ffffff' }}>Contact us</a>
+</div>
+
+
+
               </div>
 
                 <div className="footer-apps">
+
+
                   <div
+                  
                     className="custom-svg-container"
                     style={{ cursor: "pointer" }}
                     onMouseEnter={handleMouseEnterDribbble}
@@ -193,6 +201,7 @@ function Footer() {
                         fill={isHoveredDribbble ? "#BA5198" : "white"}
                       />
                     </svg>
+
                   </div>
                   <div className="custom-svg-container">
                     <svg

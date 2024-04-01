@@ -14,7 +14,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 0 25px 0 25px;
+    padding: 45px 25px 0 25px;
   }
   .work-center{
     width: 100%;
@@ -161,10 +161,28 @@
     align-items: flex-end;
     gap: 9px;
   }
+  .image-container {
+    position: relative;
+  }
+  
+  .unleash-bg {
+    position: absolute;
+    top: -86px;
+    left: 0;
+    width: 100%;
+    z-index: 1; /* Make sure this image appears behind */
+  }
+  
+  .work-center {
+    position: relative; /* Ensure this image stays in the document flow */
+    z-index: 2; /* Make sure this image appears in front */
+  }
   .contact-us-child {
     align-self: stretch;
     flex-direction: row;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
+
     padding: 0 53px var(--padding-16xl) var(--padding-33xl);
     text-align: center;
     font-size: var(--font-size-2xs);
@@ -1633,6 +1651,8 @@
     width: 100%;
     position: relative;
     background-color: var(--color-black);
+    align-items: center;
+
     overflow: hidden;
     flex-direction: column;
     padding: var(--padding-14xl) 0 0;

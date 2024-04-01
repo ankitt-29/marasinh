@@ -192,7 +192,7 @@
   .div3 {
     height: 16px;
     position: relative;
-    font-size: 16.5px;
+    font-size: 12.5px;
     font-weight: 600;
     color: var(--color-black);
     display: inline-block;
@@ -248,7 +248,7 @@
   }
   .frame-child26 {
     width: 100%;
-    height: 100%;
+    height: 103%;
     position: absolute;
     margin: 0 !important;
     top: 0;
@@ -300,7 +300,7 @@
     display: none;
   }
   .your-name {
-    width: 81px;
+    width: 203px;
     border: 0;
     outline: 0;
     font-weight: 600;
@@ -346,7 +346,7 @@
     display: none;
   }
   .your-email {
-    width: 81px;
+    width: 216px;
     border: 0;
     outline: 0;
     font-weight: 600;
@@ -404,7 +404,7 @@
 }
 
   .your-phone-number {
-    width: 135px;
+    width: 187px;
     border: 0;
     outline: 0;
     font-weight: 600;
@@ -473,7 +473,8 @@
   .lets-create-special-parent {
     width: 275px;
     flex-direction: column;
-    padding: 0 0 var(--padding-3xs);
+    // padding: 0 0 var(--padding-3xs);
+    padding-top: 24px;
     box-sizing: border-box;
     gap: 18.5px;
   }
@@ -1016,12 +1017,16 @@
   .group-form {
     margin: 0;
     flex-direction: column;
-    padding: 20px 15.400000000001455px 34.89999999999999px
-      var(--padding-6xl);
+    // padding: 20px 15.400000000001455px 34.89999999999999px
+    //   var(--padding-6xl);
     position: relative;
     gap: 30.69999999999999px;
     align-items: center;
     justify-content: center;
+  }
+  .fav{
+    padding-top: 43px;
+
   }
   .center {
     // display: flex;
@@ -1036,7 +1041,7 @@
     top: 0;
     right: 0;
     bottom: 0;
-    left: 3px;
+    left: 0px;
     border-radius: var(--br-5xl);
     background-color: var(--color-gray-900);
     backdrop-filter: blur(75px);
@@ -1297,9 +1302,10 @@
   .frame-child46 {
     height: 766px;
     flex: 1;
-    position: relative;
-    max-width: 100%;
-    overflow: hidden;
+    position: absolute;
+    // max-width: 100%;
+    width: 100%;
+    // overflow: hidden;
     z-index: 1;
     // padding-left: 12px;
     padding: 0 7px 0 7px;
@@ -1627,7 +1633,7 @@
   .frame-wrapper13 {
     align-self: stretch;
     justify-content: flex-start;
-    padding: 0 var(--padding-sm) var(--padding-7xl) var(--padding-3xs);
+    padding: 0 var(--padding-sm) var(--padding-7xl) 0;
   }
   .marasih-studio-all1 {
     position: relative;

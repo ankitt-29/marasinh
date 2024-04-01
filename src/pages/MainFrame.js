@@ -5,11 +5,12 @@ import { useNavigate } from "react-router-dom";
 import "./MainFrame.scss";
 import Behance from "./behance";
 import Offcanvas from "./Offcanvas";
-import './mobileWork.scss'
+import "./mobileWork.scss";
 import FooterMobile from "./FooterMobile";
 import DesktopHeader from "./WorkHeader";
 import WorkHeader from "./WorkHeader";
 import WorkOffcanvasMenu from "./WorkOffcanvasMenu";
+import NewFooter from "./NewFooter";
 const MainFrame = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 1200);
 
@@ -54,7 +55,7 @@ const MainFrame = () => {
     <div>
       {isMobile ? (
         <div>
-             <div className="mobile-work-page">
+          <div className="mobile-work-page">
             <div className="contact-us3">
               {/* <div className="wrapper-star-11">
                 <img
@@ -81,16 +82,16 @@ const MainFrame = () => {
                     />
                   </div>
                   <div className="essential-menu-instance-parent">
-      <div className="essential-menu-instance"></div>
-      <img
-        className="essetionalmenu-icon2"
-        loading="lazy"
-        alt=""
-        src="/essetionalmenu.svg"
-        onClick={handleWorkMenuClick} // Call handleWorkMenuClick on image click
-      />
-      <WorkOffcanvasMenu /> {/* Render the Work offcanvas menu */}
-    </div>
+                    <div className="essential-menu-instance"></div>
+                    <img
+                      className="essetionalmenu-icon2"
+                      loading="lazy"
+                      alt=""
+                      src="/essetionalmenu.svg"
+                      onClick={handleWorkMenuClick} // Call handleWorkMenuClick on image click
+                    />
+                    <WorkOffcanvasMenu /> {/* Render the Work offcanvas menu */}
+                  </div>
                 </div>
               </header>
               <section className="contact-us-child">
@@ -110,8 +111,16 @@ const MainFrame = () => {
                 </div>
               </div>
               <div className="mobile-work-images">
-                <img className="work-center" src="/mobile-unleash.png" alt="" />
-                <img className="work-center" src="/socialine-mobile.png" alt="" />
+                <div class="image-container">
+                  <img class="unleash-bg" src="/unleash-bf.png" alt="" />
+                  <img class="work-center" src="/mobile-unleash.png" alt="" />
+                </div>
+
+                <img
+                  className="work-center"
+                  src="/socialine-mobile.png"
+                  alt=""
+                />
                 <img className="work-center" src="/roast-mobile.png" alt="" />
                 <img className="work-center" src="/mult-mobile.png" alt="" />
 
@@ -132,28 +141,10 @@ const MainFrame = () => {
                 <img className="work-center" src="/cashcusion.png" alt="" />
 
                 <img className="work-center" src="/lockey.png" alt="" />
-
-
-
-
-
-
-
-
               </div>
 
-
-
-
-
-
-
-
-
-
-
-              
-              {/* <section className="contact-us-inner1">
+              {
+                /* <section className="contact-us-inner1">
                 <div className="wrapper-group-34407-parent">
                   <div className="wrapper-group-34407">
                     <img
@@ -360,22 +351,22 @@ const MainFrame = () => {
                   src="/group-34432@2x.png"
                 />
               </section>*/
-              <section className="contact-us-inner11">
-                <div className="rectangle-parent36">
-                  <div className="frame-child65"></div>
-                  <div className="we-arent-limit-our-creativity-parent">
-                    <div className="we-arent-limit">
-                      we aren't limit our creativity here
-                    </div>
-                    <div className="this-is-our-selected-work-from-wrapper">
-                      <div className="this-is-our">
-                        This is our selected work from our large portfolio and
-                        we also keep adding our precious things here, by the
-                        time you can also check at dribbble and behance.
+                <section className="contact-us-inner11">
+                  <div className="rectangle-parent36">
+                    <div className="frame-child65"></div>
+                    <div className="we-arent-limit-our-creativity-parent">
+                      <div className="we-arent-limit">
+                        we aren't limit our creativity here
+                      </div>
+                      <div className="this-is-our-selected-work-from-wrapper">
+                        <div className="this-is-our">
+                          This is our selected work from our large portfolio and
+                          we also keep adding our precious things here, by the
+                          time you can also check at dribbble and behance.
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  {/* <div className="frame-wrapper15">
+                    {/* <div className="frame-wrapper15">
                     <div className="frame-parent43">
                       <div className="image-18-parent">
                         <img
@@ -415,16 +406,17 @@ const MainFrame = () => {
                     </div>
                   </div> */}
                     <div className="group-with-images-wrapper">
-                  <img
-                    className="behance-name"
-                    src="/behance-name.png"
-                    alt=""
-                    onClick={handleClick}
-                    style={{ width: "80%", height: "auto" }} 
-                  />
-                </div>
-                </div>
-              </section> }
+                      <img
+                        className="behance-name"
+                        src="/behance-name.png"
+                        alt=""
+                        onClick={handleClick}
+                        style={{ width: "80%", height: "auto" }}
+                      />
+                    </div>
+                  </div>
+                </section>
+              }
               {/* <section className="contact-us-inner12">
                 <div className="rectangle-parent37">
                   <div className="frame-child68"></div>
@@ -549,14 +541,10 @@ const MainFrame = () => {
               </section> */}
 
               <div className="footer-m">
-            <FooterMobile/>
-
+                <FooterMobile />
               </div>
-
             </div>
-      
-         </div>
-
+          </div>
         </div>
       ) : (
         <div className="desktop-work-page">
@@ -615,7 +603,7 @@ const MainFrame = () => {
                 </button>
               </div>
             </header> */}
-            <WorkHeader/>
+            <WorkHeader />
             <div className="star-star-frame">
               <h2 className="crafted-with-care1">Crafted with care</h2>
               <div className="frame-mask-group-socialine">
@@ -831,13 +819,14 @@ const MainFrame = () => {
                     src="/behance-name.png"
                     alt=""
                     onClick={handleClick}
-                    style={{ width: "80%", height: "auto" }} 
+                    style={{ width: "80%", height: "auto" }}
                   />
                 </div>
               </section>
             </main>
 
-            <Footer />
+            {/* <Footer /> */}
+            <NewFooter />
           </div>
         </div>
       )}

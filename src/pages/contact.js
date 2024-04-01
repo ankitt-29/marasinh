@@ -10,6 +10,7 @@ import "./contact1.scss";
 import FooterMobile from "./FooterMobile";
 import ContactOffcanvasMenu from "./ContactOffcanvasMenu";
 import ContactHeader from "./ContactHeader";
+import NewFooter from "./NewFooter";
 const Contact = () => {
   const [clickedLabels, setClickedLabels] = useState({
     MobileApp: false,
@@ -544,6 +545,7 @@ const Contact = () => {
                         </div>
                       </form>
                     </div>
+                    <div className="fav">
                     <div className="rectangle-parent27">
                       <div className="frame-child41"></div>
                       <div className="figma-workspace-wrapper">
@@ -587,6 +589,7 @@ const Contact = () => {
                           </div>
                         </div>
                       </div>
+                    </div>
                     </div>
                   </div>
                 </section>
@@ -1420,7 +1423,8 @@ const Contact = () => {
                     </div>
                   </section>
 
-                  <Footer />
+                  {/* <Footer /> */}
+                  <NewFooter/>
                 </div>
               </div>
             </div>

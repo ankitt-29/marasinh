@@ -16,7 +16,7 @@ export default function AboutOffcanvasMenu() {
         tabIndex="-1"
         id="offcanvasAbout"
         aria-labelledby="offcanvasAboutLabel"
-        style={{ backgroundColor: "#000000", height: "624px" }}
+        style={{ backgroundColor: "#000000", height: "auto" }}
       >
         <div className="offcanvas-header">
           <img className="left-top-icon" alt="" src="/layer-1.svg" />

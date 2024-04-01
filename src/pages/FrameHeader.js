@@ -10,6 +10,7 @@ import FooterMobile from "./FooterMobile";
 import DesktopHeader from "./WorkHeader";
 import AboutHeader from "./AboutHeader";
 import AboutOffcanvasMenu from "./AboutOffcanvasMenu";
+import NewFooter from "./NewFooter";
 const FrameHeader = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 1200);
 
@@ -1084,7 +1085,8 @@ const FrameHeader = () => {
               </div>
             </div>
           </section>
-          <Footer />
+          {/* <Footer /> */}
+          <NewFooter/>
         </div>
         </div>
       )}

@@ -25,6 +25,8 @@ import OffcanvasMenu from "./pages/OffcanvasMenu";
 import WorkOffcanvasMenu from "./pages/WorkOffcanvasMenu";
 import AboutOffcanvasMenu from "./pages/AboutOffcanvasMenu";
 import ContactOffcanvasMenu from "./pages/ContactOffcanvasMenu";
+import MobileBlogs from "./pages/mobileBlogs";
+import NewFooter from "./pages/NewFooter";
 // import MyComponent from "./pages/MyComponent";
 // import Mobile from "./pages/Mobile";
 // import HomePage from "./pages/components/HomePage";
@@ -45,13 +47,10 @@ function App() {
       <Route path="/test" element={<Test />} />
       <Route path="/behance" element={<Behance />} />
       {/* <Route path="/offcanvas" element={<Offcanvas />} />  */}
-  <Route path="/home1" element={<OffcanvasMenu />} />
-  <Route path="/work1" element={<WorkOffcanvasMenu />} />
+      <Route path="/blogs" element={<MobileBlogs />} />
+      <Route path="/newfooter" element={<NewFooter />} />
 
-  <Route path="/about1" element={<AboutOffcanvasMenu />} />
-
-  <Route path="/contact1" element={<ContactOffcanvasMenu />} />
-
+ 
   
 
 

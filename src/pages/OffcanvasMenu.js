@@ -11,7 +11,7 @@ export default function OffcanvasMenu() {
 
   return (
     <div>
-      <div className="offcanvas offcanvas-top" tabIndex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel" style={{ backgroundColor: '#000000', height: '624px' }}>
+      <div className="offcanvas offcanvas-top" tabIndex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel" style={{ backgroundColor: '#000000', height: 'auto' }}>
         <div className="offcanvas-header">
           <img className="left-top-icon" alt="" src="/layer-1.svg" />
           <img className="right-top-icon" alt="Close" src="/close.png" onClick={() => {document.getElementById("offcanvasTop").classList.remove("show");}} />

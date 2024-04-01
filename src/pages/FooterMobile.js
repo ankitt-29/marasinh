@@ -10,7 +10,7 @@ export default function FooterMobile() {
                     <img
                       className="frame-child46"
                       alt=""
-                      src="/rectangle.png"
+                      src="/footer-bf.png"
                     />
                   </div>
                   <div className="simple-creative">

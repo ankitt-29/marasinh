@@ -67,7 +67,10 @@ button {
   .slide {
     width: 100%;
   }
+.review-desktop{
+  width: 43%;
 
+}
   .slide img {
     width: 100%;
     height: auto;
@@ -188,7 +191,7 @@ button {
   .crafted-box {
     width: 541px;
     height: 712px;
-    border: 2px solid rgba(118, 101, 239, 1);
+    border: 2px solid #4c3eb1;
     border-radius: 36px;
     background-color: rgba(9, 9, 9, 0.11);
     margin-right: 26px;
@@ -649,7 +652,7 @@ button {
     position: relative;
     border-radius: 50%;
     background-color: rgba(90, 97, 255, 0.8);
-    filter: blur(600px);
+    filter: blur(315px);
   }
 
   .we-marasih-studio {
@@ -1613,7 +1616,7 @@ button {
     position: absolute;
     top: 0;
     left: 0;
-    border: 1px solid var(--color-darkviolet-200);
+    // border: 1px solid var(--color-darkviolet-200);
     width: 100%;
     height: 100%;
     overflow: hidden;
@@ -1970,6 +1973,53 @@ button {
     box-sizing: border-box;
   }
 
+
+  .geometry-transformer {
+   
+  }
+
+// .bounce{
+//   width: 100%; 
+//   background: linear-gradient(to right, rgba(34, 51, 27, 0.2), rgba(196, 255, 168, 0) 100%),
+//               linear-gradient(to right, rgba(34, 51, 27, 0.2), rgba(196, 255, 168, 0) 100%);
+// }
+  
+  // .geometry-transformer {
+  //   position: relative;
+  //   overflow: hidden;
+  //   padding-top: 100px; /* Adjust the top padding to make space for the image */
+  // }
+  .full-width{
+    width: 100%;
+  }
+  .background-gradient {
+    position: absolute;
+    // top: 0;
+    // left: 0;
+    width: 375px;
+    height: 470px;
+    background: linear-gradient(to right, rgba(34, 51, 27, 0.3), rgba(196, 255, 168, 0) 100%),
+                // linear-gradient(to right, rgba(34, 51, 27, 0.2), rgba(196, 255, 168, 0) 100%);
+    /* Adjust the gradient colors and direction as needed */
+  }
+  .background-gradient2 {
+    position: absolute;
+    width: 100px; /* Fixed width of the gradient */
+    height: 100px; /* Fixed height of the gradient */
+    background: linear-gradient(to left, rgba(34, 51, 27, 0.2), rgba(196, 255, 168, 0) 100%);
+    /* Adjust the gradient colors and direction as needed */
+    z-index: -1; /* Ensure it's behind other content */
+  }
+
+
+    
+  .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1; /* Ensure the image stays behind other elements */
+  }
   .initiative-taken {
     width: 100%;
     height: 100%;
@@ -3452,7 +3502,7 @@ button {
       gap: var(--gap-lgi);
     }
   }
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 768px) {
     .marasih-home-page .header-frame {
       zoom: 0% !important;
     }
@@ -3579,7 +3629,9 @@ button {
       height: 100%;
       background-color: #f0f0f0;
     }
-
+.card-4{
+  width: 91%;
+}
     .mobile-crafted-inner {
       padding: 10px;
     }
