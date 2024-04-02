@@ -189,16 +189,16 @@
   .frame-parent47,
   .marasih-design-studio-wrapper {
     display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-  }
+    align-items: center;
+    justify-content: center;
+   }
   .marasih-design-studio-wrapper {
     align-self: stretch;
     flex-direction: row;
     // padding: 0 var(--padding-56xl) 0 74px;
   }
   .frame-parent47 {
-    // flex: 1;
+    flex: 1 1;
     flex-direction: column;
     gap: var(--gap-31xl);
     max-width: 100%;

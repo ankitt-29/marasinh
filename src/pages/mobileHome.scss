@@ -15,6 +15,20 @@
   margin-top: -18px;
 
 }
+
+.image-container-mobile {
+  position: relative;
+  margin: 10px; /* Adjust as needed */
+}
+
+.arrow-icon {
+  position: absolute;
+  top: 89.2%;
+  left: 87%;
+  transform: translate(-50%, -50%);
+  width: 50px; /* Adjust size as needed */
+  height: auto; /* Adjust size as needed */
+}
 .center-divs{
   display: flex;
   justify-content: center;
@@ -23,7 +37,7 @@
 }
 .four-images{
   width: 100%;
-  padding: 8px 0 8px 0;
+  padding: 4px 0 4px 0;
 }
 .card-4{
   width: 91% !important;
@@ -121,6 +135,8 @@
     align-items: flex-start;
     justify-content: space-between;
     gap: var(--gap-xl);
+    padding: 0 33px 0 33px;
+
   }
   .ancestor-pathway-child {
     height: 146px;

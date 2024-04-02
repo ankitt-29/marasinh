@@ -234,16 +234,24 @@ const HeaderFrame = () => {
                     </div>
                    
                   </div>
-                 <div className="center-divs">
-                  <img className="four-images" src="/socialine-mob-rect.png" alt="" />
-                  <img className="four-images" src="/dor-dating.png" alt="" />
-                  <img className="four-images" src="/panache.png" alt="" />
-                  <img className="four-images" src="/portfolio.png" alt="" />
+                  <div className="center-divs">
+    <div class="image-container-mobile">
+        <img class="four-images" src="/socialine-mob-rect.png" alt="" />
+        <img class="arrow-icon" src="/arrow-home.png" alt="" />
+    </div>
+    <div class="image-container-mobile">
+        <img class="four-images" src="/dor-dating.png" alt="" />
+        <img class="arrow-icon" src="/arrow-home.png" alt="" />
+    </div>
+    <div class="image-container-mobile">
+        <img class="four-images" src="/panache.png" alt="" />
+        <img class="arrow-icon" src="/arrow-home.png" alt="" />
+    </div>
+    <div class="image-container-mobile">
+        <img class="four-images" src="/portfolio.png" alt="" />
+    </div>
+</div>
 
-                  
-
-
-                 </div>
                   {/* <div className="rectangle-parent1">
                     <div className="frame-child1"></div>
                     <img

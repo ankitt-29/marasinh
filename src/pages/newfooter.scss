@@ -1451,7 +1451,21 @@
         display: flex;
         align-items: flex-start;
         max-width: 100%;
+        margin-top: -19px;
+
       }
+      .custom-svg-container {
+        transition: fill 0.3s ease; /* Add smooth transition for fill property */
+      }
+      
+      .facebook-container {
+        transition: fill 0.3s ease; /* Add smooth transition for fill property */
+      }
+      
+      .bento-container {
+        transition: fill 0.3s ease; /* Add smooth transition for fill property */
+      }
+      
       .frame-wrapper49 {
         width: 421px;
         flex-direction: column;
