@@ -35,7 +35,7 @@ export default function ContactOffcanvasMenu() {
                 fontSize: "21px",
                 color: "#9A9A9A",
                 textAlign: "center",
-                marginLeft:"5px"
+                marginLeft:"9px"
 
               }}
             >
@@ -49,37 +49,37 @@ export default function ContactOffcanvasMenu() {
             <img
               src="/social-icons.svg"
               alt="Social Media Icon 1"
-              style={{ width: "23px", height: "23px", margin: "0 14px" }}
+              style={{ width: "23px", height: "23px", margin: "0 12px" }}
             />
             <img
               src="/social-icons-1.svg"
               alt="Social Media Icon 2"
-              style={{ width: "23px", height: "23px", margin: "0 14px" }}
+              style={{ width: "23px", height: "23px", margin: "0 12px" }}
             />
             <img
               src="/component-2.svg"
               alt="Social Media Icon 3"
-              style={{ width: "23px", height: "23px", margin: "0 14px" }}
+              style={{ width: "23px", height: "23px", margin: "0 12px" }}
             />
             <img
               src="/social-icons-2.svg"
               alt="Social Media Icon 4"
-              style={{ width: "23px", height: "23px", margin: "0 14px" }}
+              style={{ width: "23px", height: "23px", margin: "0 12px" }}
             />
             <img
               src="/social-icons-3.svg"
               alt="Social Media Icon 5"
-              style={{ width: "23px", height: "23px", margin: "0 14px" }}
+              style={{ width: "23px", height: "23px", margin: "0 12px" }}
             />
             <img
               src="/social-icons-4.svg"
               alt="Social Media Icon 6"
-              style={{ width: "23px", height: "23px", margin: "0 14px" }}
+              style={{ width: "23px", height: "23px", margin: "0 12px" }}
             />
             <img
               src="/frame-48.svg"
               alt="Social Media Icon 7"
-              style={{ width: "23px", height: "23px", margin: "0 14px" }}
+              style={{ width: "23px", height: "23px", margin: "0 12px" }}
             />
           </div>
         </div>
